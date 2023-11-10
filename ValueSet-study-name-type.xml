@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="study-name-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>formal-title</td><td>Formal Title</td></tr><tr><td>internal-name</td><td>Internal Name</td></tr><tr><td>familiar-ame</td><td>Familiar Name (Nickname)</td></tr><tr><td>acronym</td><td>Acronym</td></tr><tr><td>alternative-name</td><td>Alternative Name</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type"/>
+  <version value="0.1.0"/>
+  <name value="StudyNameTypeVS"/>
+  <title value="Study Name Type"/>
+  <status value="draft"/>
+  <date value="2023-11-10T21:24:01+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="ncpi-fhir-ig@googlegroups.com"/>
+    </telecom>
+  </contact>
+  <description value="Some common types of study 'names'."/>
+  <compose>
+    <include>
+      <system value="https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type"/>
+      <concept>
+        <code value="formal-title"/>
+        <display value="Formal Title"/>
+      </concept>
+      <concept>
+        <code value="internal-name"/>
+        <display value="Internal Name"/>
+      </concept>
+      <concept>
+        <code value="familiar-ame"/>
+        <display value="Familiar Name (Nickname)"/>
+      </concept>
+      <concept>
+        <code value="acronym"/>
+        <display value="Acronym"/>
+      </concept>
+      <concept>
+        <code value="alternative-name"/>
+        <display value="Alternative Name"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

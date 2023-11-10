@@ -1,0 +1,32 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyNameTypeVS",
+      "title" : "Study Name Type",
+      "description" : "Some common types of study 'names'.",
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyPersonnelRoleVS",
+      "title" : "Study Personnel Role",
+      "description" : "Roles associated with study personnel.",
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-personnel-role"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "study-name-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>formal-title</td><td>Formal Title</td></tr><tr><td>internal-name</td><td>Internal Name</td></tr><tr><td>familiar-ame</td><td>Familiar Name (Nickname)</td></tr><tr><td>acronym</td><td>Acronym</td></tr><tr><td>alternative-name</td><td>Alternative Name</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "StudyNameTypeVS"] ; # 
+  fhir:title [ fhir:v "Study Name Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-11-10T21:24:01+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ncpi-fhir-ig@googlegroups.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Some common types of study 'names'."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig/ValueSet/study-name-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "formal-title" ] ;
+         fhir:display [ fhir:v "Formal Title" ]
+       ] [
+         fhir:code [ fhir:v "internal-name" ] ;
+         fhir:display [ fhir:v "Internal Name" ]
+       ] [
+         fhir:code [ fhir:v "familiar-ame" ] ;
+         fhir:display [ fhir:v "Familiar Name (Nickname)" ]
+       ] [
+         fhir:code [ fhir:v "acronym" ] ;
+         fhir:display [ fhir:v "Acronym" ]
+       ] [
+         fhir:code [ fhir:v "alternative-name" ] ;
+         fhir:display [ fhir:v "Alternative Name" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

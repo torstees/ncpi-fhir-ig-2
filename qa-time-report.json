@@ -1,0 +1,307 @@
+{
+  "date" : "Fri, 10 Nov, 2023 21:24:01 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json",
+      "size" : 3349,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 97
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 106
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 643
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 122
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 148
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 272,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 12
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 1177,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 16
+        },
+        {
+          "activity" : "scan",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 21
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 43,
+          "length" : 222
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 43,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 195
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 808
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 271
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 2825
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 20
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-common-data-model-research-study.json",
+      "size" : 15119,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 47
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 72
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 43,
+          "length" : 154
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 140
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 281
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 298
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 934
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 79,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-study-name-type.json",
+      "size" : 957,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 32
+        },
+        {
+          "activity" : "load",
+          "start" : 43,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 484
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 367
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 53,
+          "length" : 10248
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 71,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-study-personnel-role.json",
+      "size" : 793,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 42,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 42,
+          "length" : 16
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 44,
+          "length" : 235
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 53
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 505
+        }
+      ]
+    }
+  ]
+}

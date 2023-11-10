@@ -1,0 +1,37 @@
+[
+  {
+    "id" : "ncpi-fhir-implementation-guide-v2",
+    "type" : "ImplementationGuide",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ImplementationGuide/ncpi-fhir-implementation-guide-v2",
+    "version" : "0.1.0",
+    "name" : "NCPIFHIRIGv2"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  },
+  {
+    "id" : "common-data-model-research-study",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/common-data-model-research-study",
+    "version" : "0.1.0",
+    "name" : "CdmResearchStudy"
+  },
+  {
+    "id" : "study-name-type",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type",
+    "version" : "0.1.0",
+    "name" : "StudyNameTypeVS"
+  },
+  {
+    "id" : "study-personnel-role",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role",
+    "version" : "0.1.0",
+    "name" : "StudyPersonnelRoleVS"
+  }
+]
