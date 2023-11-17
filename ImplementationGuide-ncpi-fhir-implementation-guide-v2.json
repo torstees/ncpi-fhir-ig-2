@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-11-10T21:24:01+00:00",
+  "date" : "2023-11-17T22:43:52+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -26,7 +26,7 @@
   "description" : "FHIR Implementation Guide for the NIH Cloud Platform Interoperability Effort (NCPI).",
   "packageId" : "ncpi-fhir-implementation-guide-v2",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.1"],
+  "fhirVersion" : ["4.3.0"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -614,7 +614,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/common-data-model-research-study"
+        "reference" : "StructureDefinition/CommonDataModelResearchStudy"
       },
       "name" : "CDM Research Study",
       "description" : "The **Common Data Model (CDM) Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
@@ -635,6 +635,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-study"
+      },
+      "name" : "NCPI Research Study",
+      "description" : "The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -643,6 +655,54 @@
       "name" : "PatientExample",
       "description" : "An example of a patient with a license to krill.",
       "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-associated-party"
+      },
+      "name" : "Research Study Associated Party",
+      "description" : "Sponsors, collaborators, and other parties affiliated with a research study.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-design"
+      },
+      "name" : "Research Study Design",
+      "description" : "Codes categorizing the type of study such as investigational vs. observational, type of blinding, type of randomization, safety vs. efficacy, etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-result"
+      },
+      "name" : "Research Study Result",
+      "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/study-design"
+      },
+      "name" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -669,47 +729,52 @@
       "exampleBoolean" : false
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
         "nameUrl" : "index.html",
         "title" : "Home",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "conformance.html"
-        }],
+        "nameUrl" : "authors.html",
+        "title" : "Authors",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "conformance.html",
         "title" : "Conformance",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "contributing.html"
-        }],
+        "nameUrl" : "contact.html",
+        "title" : "Contact",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "contributing.html",
         "title" : "Contributing",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "must_support.html"
-        }],
+        "nameUrl" : "FHIR_Basics.html",
+        "title" : "FHIR Basics",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "IG_Versioning.html",
+        "title" : "IG Versioning",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "must_support.html",
         "title" : "Must Support",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "ncpi.html",
+        "title" : "Ncpi",
         "generation" : "markdown"
       }]
     },

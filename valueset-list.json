@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-design",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "systems" : ["https://hl7.org/fhir/codesystem-study-design.html"]
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type",
       "version" : "0.1.0",
       "status" : "draft",

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "4.0.1",
+      "version" : "4.3.0",
       "status" : "active",
       "name" : "AdministrativeGender",
       "title" : "AdministrativeGender",
@@ -15,8 +15,40 @@
       "StructureDefinition-MyPatient.html" : "MyPatient"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.3.0",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
-      "version" : "4.0.1",
+      "version" : "4.3.0",
       "status" : "draft",
       "name" : "CommonLanguages",
       "title" : "Common Languages",
@@ -26,11 +58,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-MyPatient.html" : "MyPatient",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
-      "version" : "4.0.1",
+      "version" : "4.3.0",
       "status" : "active",
       "name" : "LinkType",
       "title" : "LinkType",
@@ -44,7 +77,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-      "version" : "4.0.1",
+      "version" : "4.3.0",
       "status" : "active",
       "name" : "Marital Status Codes",
       "title" : "MaritalStatus",
@@ -61,10 +94,10 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-      "version" : "4.0.1",
+      "version" : "4.3.0",
       "status" : "active",
       "name" : "PatientContactRelationship",
-      "title" : "Patient Contact Relationship ",
+      "title" : "Patient Contact Relationship",
       "description" : "The nature of the relationship between the patient and the contact person.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
       "oids" : ["2.16.840.1.113883.4.642.3.1130"],
@@ -72,6 +105,94 @@
       "uses" : {
       },
       "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudyObjectiveType",
+      "description" : "Codes for the kind of study objective.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-objective-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.823"],
+      "sources" : ["2.16.840.1.113883.4.642.3.823"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/research-study-phase"],
+      "oids" : ["2.16.840.1.113883.4.642.3.821"],
+      "sources" : ["2.16.840.1.113883.4.642.3.821"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudyPrimaryPurposeType",
+      "description" : "Codes for the main intent of the study.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.827"],
+      "sources" : ["2.16.840.1.113883.4.642.3.827"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudyReasonStopped",
+      "description" : "Codes for why the study ended prematurely.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.825"],
+      "sources" : ["2.16.840.1.113883.4.642.3.825"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ResearchStudyStatus",
+      "title" : "ResearchStudyStatus",
+      "description" : "Codes that convey the current status of the research study.",
+      "systems" : ["http://hl7.org/fhir/research-study-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.819"],
+      "sources" : ["2.16.840.1.113883.4.642.3.819"],
+      "uses" : {
+      },
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-design",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "systems" : ["https://hl7.org/fhir/codesystem-study-design.html"],
+      "uses" : {
+      },
+      "StructureDefinition-research-study-design.html" : "Research Study Design"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type",
@@ -85,7 +206,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+      "StructureDefinition-CommonDataModelResearchStudy.html" : "CDM Research Study"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role",
@@ -99,7 +220,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+      "StructureDefinition-CommonDataModelResearchStudy.html" : "CDM Research Study"
     }
   ]
 }

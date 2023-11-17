@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "StudyNameTypeVS"] ; # 
   fhir:title [ fhir:v "Study Name Type"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-10T21:24:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-17T22:43:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

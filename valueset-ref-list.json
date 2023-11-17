@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-design",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StudyDesign",
+      "title" : "Study Design",
+      "description" : "This is a set of terms for study design characteristics.",
+      "systems" : ["https://hl7.org/fhir/codesystem-study-design.html"],
+      "uses" : {
+      },
+      "StructureDefinition-research-study-design.html" : "Research Study Design"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type",
       "version" : "0.1.0",
       "status" : "draft",
@@ -12,7 +24,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+      "StructureDefinition-CommonDataModelResearchStudy.html" : "CDM Research Study"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role",
@@ -26,7 +38,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-common-data-model-research-study.html" : "CDM Research Study"
+      "StructureDefinition-CommonDataModelResearchStudy.html" : "CDM Research Study"
     }
   ]
 }
