@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2023-11-17T22:43:52+00:00"/>
+  <date value="2023-11-27T20:47:53+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -477,6 +477,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ncpi"/>
+      </reference>
+      <name value="NCPI FHIR Codes"/>
+      <description value="Codes that would apply to NCPI projects"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -535,18 +546,18 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/study-design"/>
+        <reference value="ValueSet/study-name-type-vs"/>
       </reference>
-      <name value="Study Design"/>
-      <description value="This is a set of terms for study design characteristics."/>
+      <name value="Study Name Type"/>
+      <description value="Some common types of study 'names'."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/study-name-type"/>
+        <reference value="CodeSystem/study-name-type"/>
       </reference>
       <name value="Study Name Type"/>
       <description value="Some common types of study 'names'."/>
@@ -557,7 +568,18 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/study-personnel-role"/>
+        <reference value="ValueSet/study-personnel-role-vs"/>
+      </reference>
+      <name value="Study Personnel Role"/>
+      <description value="Roles associated with study personnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/study-personnel-role"/>
       </reference>
       <name value="Study Personnel Role"/>
       <description value="Roles associated with study personnel."/>

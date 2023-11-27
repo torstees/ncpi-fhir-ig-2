@@ -1,8 +1,108 @@
 {
   "resourceType" : "Bundle",
-  "id" : "89f10251-7037-473d-8a9b-ad9d886cf130",
+  "id" : "3d850e27-a504-4f52-a993-56d7f3079935",
   "meta" : {
-    "lastUpdated" : "2023-11-17T22:43:52.950+00:00"
+    "lastUpdated" : "2023-11-27T20:47:53.933+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-study-name-type.html\">codesystem Study Name Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-formal-title\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-formal-title\">formal-title</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Formal Title</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-internal-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-internal-name\">internal-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Internal Name</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-familiar-ame\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-familiar-ame\">familiar-ame</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Familiar Name (Nickname)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-acronym\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-acronym\">acronym</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Acronym</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-name-type-alternative-name\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-name-type.html#study-name-type-alternative-name\">alternative-name</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type</td><td>Alternative Name</td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
+      "version" : "0.1.0",
+      "name" : "StudyNameTypeVS",
+      "title" : "Study Name Type",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-11-27T20:47:53+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:c070dc20-3ca3-46f5-ab01-05f5c759e0ed",
+        "timestamp" : "2023-11-27T20:48:13+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+          "code" : "formal-title",
+          "display" : "Formal Title"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+          "code" : "internal-name",
+          "display" : "Internal Name"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+          "code" : "familiar-ame",
+          "display" : "Familiar Name (Nickname)"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+          "code" : "acronym",
+          "display" : "Acronym"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
+          "code" : "alternative-name",
+          "display" : "Alternative Name"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-study-personnel-role.html\">codesystem Study Personnel Role v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-primary-investigator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-primary-investigator\">primary-investigator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Primary Investigator</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-administrator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-administrator\">administrator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Administrator</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-study-personnel-role-collaborator\"> </a>\u00a0\u00a0<a href=\"CodeSystem-study-personnel-role.html#study-personnel-role-collaborator\">collaborator</a></td><td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role</td><td>Collaborator</td></tr></table></div>"
+      },
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
+      "version" : "0.1.0",
+      "name" : "StudyPersonnelRoleVS",
+      "title" : "Study Personnel Role",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-11-27T20:47:53+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2036f670-41df-4723-bd71-5cfeb9c5a345",
+        "timestamp" : "2023-11-27T20:48:13+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+          "code" : "primary-investigator",
+          "display" : "Primary Investigator"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+          "code" : "administrator",
+          "display" : "Administrator"
+        },
+        {
+          "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role",
+          "code" : "collaborator",
+          "display" : "Collaborator"
+        }]
+      }
+    }
+  }]
 }

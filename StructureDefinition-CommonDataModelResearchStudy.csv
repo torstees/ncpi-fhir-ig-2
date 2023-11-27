@@ -24,7 +24,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "CommonDataModelResearchStudy.name.text","CommonDataModelResearchStudy.name.text","","","",1,1,"","","","string {[]} {[]}
 ","The study's name","The study's name","","","","","","","","","",,,,,"",,,,"CommonDataModelResearchStudy.name.text",1,1,"",""
 "CommonDataModelResearchStudy.name.type","CommonDataModelResearchStudy.name.type","","","",0,1,"","","","code {[]} {[]}
-","Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)","Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)","","","","","","","","","",,"extensible","","https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type","",,,,"CommonDataModelResearchStudy.name.type",0,1,"",""
+","Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)","Type of name or title this name relates to (formal-title, internale-name, familiar-name, etc)","","","","","","","","","",,"extensible","","https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs","",,,,"CommonDataModelResearchStudy.name.type",0,1,"",""
 "CommonDataModelResearchStudy.description","CommonDataModelResearchStudy.description","","","",1,1,"","","","string {[]} {[]}
 ","short summary of relevant and important information about the study.","short summary of relevant and important information about the study.","","","","","","","","","",,,,,"",,,,"CommonDataModelResearchStudy.description",1,1,"",""
 "CommonDataModelResearchStudy.website","CommonDataModelResearchStudy.website","","","",0,*,"","","","url {[]} {[]}
@@ -102,6 +102,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "CommonDataModelResearchStudy.personnel.name","CommonDataModelResearchStudy.personnel.name","","","",1,1,"","","","HumanName {[]} {[]}
 ","The name of the person being described.","The name of the person being described.","","","","","","","","","",,,,,"",,,,"CommonDataModelResearchStudy.personnel.name",1,1,"",""
 "CommonDataModelResearchStudy.personnel.role","CommonDataModelResearchStudy.personnel.role","","","",1,1,"","","","code {[]} {[]}
-","The role of the person being described.","The role of the person being described.","","","","","","","","","",,"extensible","","https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role","",,,,"CommonDataModelResearchStudy.personnel.role",1,1,"",""
+","The role of the person being described.","The role of the person being described.","","","","","","","","","",,"extensible","","https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs","",,,,"CommonDataModelResearchStudy.personnel.role",1,1,"",""
 "CommonDataModelResearchStudy.personnel.organization","CommonDataModelResearchStudy.personnel.organization","","","",0,1,"","","","string {[]} {[]}
 ","The organizational affiliation of the person being described.","The organizational affiliation of the person being described.","","","","","","","","","",,,,,"",,,,"CommonDataModelResearchStudy.personnel.organization",0,1,"",""

@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-11-17T22:43:52+00:00",
+  "date" : "2023-11-27T20:47:53+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -635,6 +635,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ncpi"
+      },
+      "name" : "NCPI FHIR Codes",
+      "description" : "Codes that would apply to NCPI projects",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -698,19 +710,19 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/study-design"
+        "reference" : "ValueSet/study-name-type-vs"
       },
-      "name" : "Study Design",
-      "description" : "This is a set of terms for study design characteristics.",
+      "name" : "Study Name Type",
+      "description" : "Some common types of study 'names'.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ValueSet/study-name-type"
+        "reference" : "CodeSystem/study-name-type"
       },
       "name" : "Study Name Type",
       "description" : "Some common types of study 'names'.",
@@ -722,7 +734,19 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/study-personnel-role"
+        "reference" : "ValueSet/study-personnel-role-vs"
+      },
+      "name" : "Study Personnel Role",
+      "description" : "Roles associated with study personnel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/study-personnel-role"
       },
       "name" : "Study Personnel Role",
       "description" : "Roles associated with study personnel.",

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-17T22:43:52+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-27T20:47:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -548,6 +548,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi> ;
+         fhir:reference [ fhir:v "CodeSystem/ncpi" ]
+       ] ;
+       fhir:name [ fhir:v "NCPI FHIR Codes" ] ;
+       fhir:description [ fhir:v "Codes that would apply to NCPI projects" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -614,20 +626,20 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-design> ;
-         fhir:reference [ fhir:v "ValueSet/study-design" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/study-name-type-vs" ]
        ] ;
-       fhir:name [ fhir:v "Study Design" ] ;
-       fhir:description [ fhir:v "This is a set of terms for study design characteristics." ] ;
+       fhir:name [ fhir:v "Study Name Type" ] ;
+       fhir:description [ fhir:v "Some common types of study 'names'." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type> ;
-         fhir:reference [ fhir:v "ValueSet/study-name-type" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type> ;
+         fhir:reference [ fhir:v "CodeSystem/study-name-type" ]
        ] ;
        fhir:name [ fhir:v "Study Name Type" ] ;
        fhir:description [ fhir:v "Some common types of study 'names'." ] ;
@@ -638,8 +650,20 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role> ;
-         fhir:reference [ fhir:v "ValueSet/study-personnel-role" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs> ;
+         fhir:reference [ fhir:v "ValueSet/study-personnel-role-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Study Personnel Role" ] ;
+       fhir:description [ fhir:v "Roles associated with study personnel." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-personnel-role> ;
+         fhir:reference [ fhir:v "CodeSystem/study-personnel-role" ]
        ] ;
        fhir:name [ fhir:v "Study Personnel Role" ] ;
        fhir:description [ fhir:v "Roles associated with study personnel." ] ;
