@@ -275,6 +275,174 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<h1 id="researchstudy-definition">ResearchStudy Definition</h1>
+
+<h2 id="basic-definition">Basic Definition</h2>
+<p>The <strong>ResearchStudy</strong> FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files. It provides information about the research effort including the purpose, goal, and contact information. In addition to being informational, a ResearchStudy resource describes who has responsibility for and authority to share the associated data files.</p>
+
+<h3 id="limits">Limits</h3>
+<h4 id="participant-identifier-context">Participant Identifier Context</h4>
+<p>A top level (parent) ResearchStudy should encompass a single <strong>participant identifier context</strong>. A participant identifier context can be understood as a unique research-based ID for an individual, and is directly related to governance and administration of the participant and their data.</p>
+
+<p>A participant identifier context functions within the research space similarly to how an MRN functions within the healthcare space.  One individual may have different MRNs at different institutions.  Each of these MRNs is an example of a patient identifier context.  This context also conveys aspects of governance and authority, because the systems that use the same MRN will generally fall under the same authority when it comes to protecting or sharing data.  A participant identifier context works the same way- it defines a space in which a particular identifier is used for a participant, and is contiguous with the authority to share or responsibility to protect research data gathered about that participant.</p>
+
+<p>Because each parent (top-level) ResearchStudy should represent a single participant identifier context, participants may only belong to one parent ResearchStudy (though they may be grouped into multiple subStudies below the main ResearchStudy).</p>
+
+<h4 id="funding-protocol-organization">Funding, Protocol, Organization</h4>
+<p>Usually, a ResearchStudy will align with a set of funds, with an organization, or with a particular protocol.  However there may be cases where there is more than one applicable protocol, source of funding, or organization involved in a given instance of ResearchStudy.  Always default to the idea of participant identifier context when determining whether an effort that spans multiple protocols, funding sources, or organizations should be considered a single ResearchStudy.</p>
+
+<h4 id="data-files">Data Files</h4>
+<p>Participant Specific Data files should always be associated with participants within a particular Participant Identifier Context.  As a result, data files can only ever belong to a single parent ResearchStudy.  If files from one context are reused in a new, separate analysis, the new ResearchStudy should point back to the original source files in their original ResearchStudy context.</p>
+
+<h3 id="structure">Structure</h3>
+<h4 id="parent-study-child-study">Parent Study, Child Study</h4>
+<p>It is common for research efforts to have varied structures.  Some may have multiple studies or study arms that together constitute a single effort.  When determining how to represent a research effort within the model of ResearchStudy, consider the participant identifier context. If the studies in question all use the same study ID for the participant, and are governed under related protocols or investigator authority, these should be represented by the same parent ResearchStudy.  If those studies do not use the same study ID for the participant, and are governed under unrelated protocols or investigator authority, these should be represented by different ResearchStudies.</p>
+
+<p>Studies which all use the same participant identifier context may be represented as individual child studies (also called sub-studies) which all share a common parent ResearchStudy.  This allows researchers to represent the important unique characteristics of the individual study, while maintaining the appropriate governance structure for data sharing.</p>
+
+<h4 id="consent-groups-access-groups-data-use-groups">Consent Groups, Access Groups, Data Use Groups</h4>
+<p>Data within a study might be subject to different access or data use limitations depending on local or national governance, protocol documents, consent documents, or more.  Items with similar consent, access, or data use controls should be grouped together.</p>
+
+<h4 id="related-studies">Related Studies</h4>
+<p>Some research efforts may be related to each other in ways that are important to track, even if these studies cover different Participant Identifier Contexts.  One example of this might be research efforts that are part of the same consortium.  These efforts might share a common funder and organization, and may even share some aspects of methodology or design, but constitute separate ResearchStudy instances.  The consortial relationship can be recorded in the Consortium attribute.</p>
+
+<blockquote>
+  <p>Note: studies could be related via funding, or by sharing of participants - do we need to include the possibility to document this type of relationship?</p>
+</blockquote>
+
+<h2 id="research-study-attributes">Research Study Attributes</h2>
+
+<h3 id="persistentidentifier">PersistentIdentifier</h3>
+<p>Each instance of ResearchStudy should have one accession identifier, and can be supplied as a combination of namespace + identifier. This identifier should be globally unique and will be external facing (not an internal ID).  An example of an appropriate AccessionNumber value would be a dbgap phs ID.</p>
+
+<h3 id="parentstudy">ParentStudy</h3>
+<p>ResearchStudy objects that represent substudies (or child studies) as described above should have a value populated for ParentStudy. SubStudies may have only one immediate ParentStudy.</p>
+
+<h3 id="name">Name</h3>
+<p>Name is a repeatable object that consists of sets of two fields.  All ResearchStudy records must have at least one Name object with Name.Type=”formal title”.</p>
+
+<h4 id="nametext">Name.Text</h4>
+<p>Name.Text is the string object that is used to document a name used for this research study</p>
+
+<h4 id="nametype">Name.Type</h4>
+<p>Name.Type defines the type of name provided in the Name.Text field for this Name object.  Name.Type can include formal name, nickname, acronym, alternative name.</p>
+
+<h3 id="description">Description</h3>
+<p>Description should provide a short summary of relevant and important information about the study.  For example, this could include the primary purpose of the study, study design and findings, technologies used, and/or content being shared via the study. If possible, the description should use original language.  If the description uses copyrighted material, similar to dbGaP requirements please include the following within the description: “Reprinted from [Article Citation], with permission from [Publisher].</p>
+
+<h3 id="website">Website</h3>
+<p>A URL for a website that provides information about the research effort as a whole.  This should not be a URL to specific study materials such as data dictionaries, github repos, or other technical documentation - that can be added under AdditionalDocumentation.</p>
+
+<h3 id="total-participants">Total Participants</h3>
+<p>Number of total participants represented by the data in this study. (Optional)</p>
+
+<h3 id="studyfocus---option-2">StudyFocus - Option 2</h3>
+<p>SubjectFocus is a repeatable object that describes the primary focus(es) of the study. This can include terms related to disease area, intervention, drug, device, or other focus. MeSH terms are preferred, but other terms may be used if there is no appropriate MeSH term. If a non-MeSH term is used, it is preferable that the term be selected from an ontology/controlled vocabulary rather than supplied as free text.</p>
+
+<h4 id="studyfocusterm">StudyFocus.Term</h4>
+<p>The term used to describe the focus of the study.  A valid MeSH is preferred.</p>
+
+<h4 id="studyfocustermsource">StudyFocus.TermSource</h4>
+<p>The source ontology or vocabulary for SubjectFocus.Term.</p>
+
+<h3 id="erollmentcriteria">ErollmentCriteria</h3>
+<p>EnrollmentCriteria describes the inclusion and exclusion criteria used to enroll participants in this study. This can be provided as a free text description, but may also be structured using bullets, tables, or other organizational methods.</p>
+
+<h3 id="population">Population</h3>
+<p>Population is a repeatable object that consists of sets of two fields. Population provides an overall description of the general population enrolled in the study, including basic demographics at a minimum and other useful population descriptors as appropriate.</p>
+
+<h4 id="populationtype">PopulationType</h4>
+<p>A term that specifies the population being described</p>
+
+<h4 id="populationdescription">PopulationDescription</h4>
+<p>A free text field that provides more information about the population specified in PopulationType within the context of this researchStudy.</p>
+
+<h3 id="citation">Citation</h3>
+<p>Provide any relevant information regarding how to cite this study. This can be as specific as including a full citation or as simple as a DOI.</p>
+
+<h3 id="publications">Publications</h3>
+<p>Provide a list of publications that use this data. This may be updated to include new publications as they are created.</p>
+
+<h3 id="additionaldocumentation">AdditionalDocumentation</h3>
+<p>AdditionalDocumentation should be used to provide URLs, citations, or other appropriate references to technical documentation that is important for understanding the data included in this study. This can include data dictionaries, methods descriptions, github repositories, case report forms (CRFs), or any other relevant documentation.</p>
+
+<h3 id="consortium">Consortium</h3>
+<p>If the data in this study was gathered as part of a consortial effort, list the consortium here.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>Acknowledgements describes any attribution or acknowledgements relevant to the study.  This can include but is not limited to funding sources, organizational affiliations or sponsors.</p>
+
+<h3 id="personnel">Personnel</h3>
+<p>Every study must have at least one Primary Contact defined. Additional personnel such as Primary Investigator(s), Administrator(s), Collaborator(s) or other roles may also be included. If there are no appropriate individuals who can serve as primary contact for a study, an organization may be provided.</p>
+
+<h4 id="personnelname">Personnel.Name</h4>
+<p>The name of the person being described.</p>
+
+<h4 id="personnelrole">Personnel.Role</h4>
+<p>The role of the person being described. This is a controlled list of terms.</p>
+
+<h4 id="personnelorganization">Personnel.Organization</h4>
+<p>The organizational affiliation of the person being described.</p>
+
+<hr />
+
+<p>Additional thoughts:</p>
+<ul>
+  <li>Fields we might consider including - please add your thoughts or other fields that you think of
+    <ul>
+      <li>Consent codes
+        <ul>
+          <li>listed in notes section but not sure if we decided to include this</li>
+        </ul>
+      </li>
+      <li>Short codes
+        <ul>
+          <li>What does this mean?</li>
+        </ul>
+      </li>
+      <li>Sponsor orgs
+        <ul>
+          <li>this is covered under attribution but could be called out as its own item if we feel that’s useful or necessary</li>
+        </ul>
+      </li>
+      <li>Related studies
+        <ul>
+          <li>Studies that are related to this one in ways other that parent/child or consortium</li>
+          <li>Not sure that we need this, but we could consider it (or add it later)</li>
+        </ul>
+      </li>
+      <li>PI/Study Contact
+        <ul>
+          <li>Gather some information about who the primary contact should be for this study</li>
+        </ul>
+      </li>
+      <li>Tax ID - from Mike Feolo in 26 Sep mtg
+        <ul>
+          <li>Taxonomy ID</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>For other documentation:</p>
+<ul>
+  <li>Add best practices for how to create an ID if there is not an appropriate one already available
+    <ul>
+      <li>Look for paper about FAIR ID creation</li>
+    </ul>
+  </li>
+  <li>Add total participants elsewhere (perhaps calculated from portal ETL)</li>
+</ul>
+
+
+</div>
+
+
+
+
 <p><b>Usage:</b></p>
 <ul>
  <li>Use this Logical Model Profile: <a href="StructureDefinition-CommonDataModelResearchStudy.html">CDM Research Study</a></li>
@@ -930,7 +1098,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Mon, Nov 27, 2023 20:47+0000">2023-11-27</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Mon, Nov 27, 2023 21:08+0000">2023-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

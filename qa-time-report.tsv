@@ -1,14 +1,14 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json	6039	-	0	0	0	0	0	0	5	117	0	0	0	0	0	0	0	1	0	0	117	125	0	0	0	5	0	2
-fsh-generated/resources/CodeSystem-ncpi.json	2081	20	0	0	0	1	0	0	1	25	0	0	0	0	0	0	0	0	0	0	29	1708	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-study-name-type.json	772	15	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	11	60	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-study-personnel-role.json	651	11	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	10	52	0	0	0	1	0	0
-fsh-generated/resources/Patient-PatientExample.json	272	11	1	0	0	0	0	0	0	49	0	0	0	0	0	0	0	0	0	0	6	16	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-CommonDataModelResearchStudy.json	14833	39	0	0	0	0	0	143	0	170	0	0	1	0	0	0	0	1	0	0	301	1025	0	0	0	9	0	1
-fsh-generated/resources/StructureDefinition-MyPatient.json	1177	14	0	0	0	0	0	202	0	163	0	0	0	0	0	0	0	2	0	0	240	889	0	0	0	9	0	2
-fsh-generated/resources/StructureDefinition-ncpi-research-study.json	4401	21	0	0	0	0	0	226	1	154	0	0	0	0	0	0	0	1	0	0	346	878	0	0	0	10	0	2
-fsh-generated/resources/StructureDefinition-research-study-associated-party.json	5992	27	0	0	0	0	0	130	0	89	0	0	0	0	0	0	0	1	0	0	230	330	0	0	0	8	1	1
-fsh-generated/resources/StructureDefinition-research-study-design.json	1785	14	1	0	0	0	0	20	0	23	0	0	0	0	0	0	0	0	0	0	51	91	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-research-study-result.json	1977	15	0	0	0	0	0	23	0	69	0	0	0	0	0	0	0	1	0	0	59	83	0	0	0	2	0	0
-fsh-generated/resources/ValueSet-study-name-type-vs.json	454	13	0	0	0	0	0	0	0	148	0	0	0	0	0	0	0	0	0	0	7	4740	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-study-personnel-role-vs.json	482	10	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	7	35	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json	6039	-	0	0	0	0	0	0	4	102	0	0	0	0	0	0	0	0	0	0	187	110	0	0	1	5	0	1
+fsh-generated/resources/CodeSystem-ncpi.json	2081	12	0	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	27	1689	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-study-name-type.json	772	8	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	14	61	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-study-personnel-role.json	651	7	1	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	13	53	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	272	6	0	0	0	0	0	0	0	46	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-CommonDataModelResearchStudy.json	14833	31	0	0	0	0	0	145	0	149	0	0	1	0	0	0	0	1	0	0	324	1036	0	0	0	13	0	0
+fsh-generated/resources/StructureDefinition-MyPatient.json	1177	14	0	0	0	0	0	116	0	149	0	0	0	0	0	0	0	2	0	0	245	957	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-ncpi-research-study.json	4401	21	0	0	0	0	0	142	0	135	0	0	0	0	0	0	0	0	0	0	300	665	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-research-study-associated-party.json	5992	28	1	0	0	0	0	74	0	72	0	0	0	0	0	0	0	1	0	0	303	347	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-research-study-design.json	1785	16	0	0	0	0	0	20	0	25	0	0	0	0	0	0	0	0	0	0	68	121	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-research-study-result.json	1977	16	0	0	0	0	0	18	0	52	0	0	0	0	0	0	0	0	0	0	59	108	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-study-name-type-vs.json	454	11	0	0	0	0	0	0	0	114	0	0	0	0	0	0	0	0	0	0	9	4922	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-study-personnel-role-vs.json	482	12	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	7	52	0	0	0	0	0	0
