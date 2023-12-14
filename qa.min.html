@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 0, warn = 17, info = 1-->
+<!-- broken links = 4, errors = 4, warn = 19, info = 1-->
 <head>
   <title>NCPIFHIRIGv2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for NCPIFHIRIGv2</h1>
- <p>Generated Mon Nov 27 21:08:37 UTC 2023, FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Dec 14 19:43:55 UTC 2023, FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = <a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2">https://nih-ncpi.github.io/ncpi-fhir-ig-2</a> (<a href="https://nih-ncpi.github.io/ncpi-fhir-ig-2/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.5</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.5.6</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ncpi-fhir-implementation-guide-v2, Canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://nih-ncpi.github.io/ncpi-fhir-ig-2/package-list.json?nocache=1701119317626 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from https://nih-ncpi.github.io/ncpi-fhir-ig-2: Not Found <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -59,10 +59,10 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4B/extension-structuredefinition-fhir-type.html">fhir-type</a>
- (28 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-bestpractice.html">bestpractice</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-bestpractice.html">bestpractice</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-bestpractice-explanation.html">bestpractice-explanation</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4B/extension-structuredefinition-fhir-type.html">fhir-type</a>
+ (28 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-maxvalueset.html">maxValueSet</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4B/extension-elementdefinition-bindingname.html">bindingName</a>
  (18 uses),     <a href="http://hl7.org/fhir/R4B/valueset-languages.html">CommonLanguages</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4B/organization.html">Organization</a>
@@ -86,22 +86,31 @@ hl7.fhir.r4b.core#4.3.0:     <a href="http://hl7.org/fhir/R4B/codesystem-guide-p
   </li>
   <li>
 hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig//StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (12 uses)
+ (18 uses)
   </li>
 </ul>
 </td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://nih-ncpi.github.io/ncpi-fhir-ig-2 (Problem #1 with package-list.json at https://nih-ncpi.github.io/ncpi-fhir-ig-2: Invalid HTTP response 404 from https://nih-ncpi.github.io/ncpi-fhir-ig-2/package-list.json?nocache=1701119279611 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://nih-ncpi.github.io/ncpi-fhir-ig-2 (Problem #1 with package-list.json at https://nih-ncpi.github.io/ncpi-fhir-ig-2: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 17, info = 1, broken links = 2</td></tr>
+ <tr><td>Summary:</td><td> errors = 4, warn = 19, info = 1, broken links = 4</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>2</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>4</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_CodeSystem-collection-type"><b>/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_CodeSystem-research-data-access-code"><b>/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-SharedDataModelResearchCollection"><b>/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-ncpi-research-study"><b>/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-study</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -125,6 +134,12 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
      <td><b><a href="StructureDefinition-ncpi-research-study.html#l410">output&#8203;/StructureDefinition-ncpi-research-study&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/ul&#8203;/li&#8203;/a at Line 291, column 72</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-study-group.html' for &quot;Study Group&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ncpi-research-study.html#l432">output&#8203;/StructureDefinition-ncpi-research-study&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 297, column 73</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-CommonDataModelResearchStudy-definitions.html#diff_CommonDataModelResearchStudy.persistentIdentifier' for &quot;persistentIdentifier&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ncpi-research-study.html#l441">output&#8203;/StructureDefinition-ncpi-research-study&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 298, column 52</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-CommonDataModelResearchStudy-definitions.html#diff_CommonDataModelResearchStudy.name' for &quot;name&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="StructureDefinition-ncpi-research-study.html#l765">output&#8203;/StructureDefinition-ncpi-research-study&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/blockquote&#8203;/p&#8203;/a at Line 427, column 35</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-study-group.html' for &quot;Study Group&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -141,9 +156,57 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_CodeSystem-collection-type"> </a>
+<h2><a href="CodeSystem-collection-type.html">fsh-generated/resources/CodeSystem-collection-type.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'https:&#8203;/&#8203;/nih-ncpi&#8203;.github&#8203;.ioo&#8203;/ncpi-fhir-ig-2&#8203;/CodeSystem&#8203;/collection-type')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type) does not match the URL (https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-collection-type</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type vs https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_CodeSystem-research-data-access-code"> </a>
+<h2><a href="CodeSystem-research-data-access-code.html">fsh-generated/resources/CodeSystem-research-data-access-code.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'https:&#8203;/&#8203;/nih-ncpi&#8203;.github&#8203;.ioo&#8203;/ncpi-fhir-ig-2&#8203;/CodeSystem&#8203;/data-access-code')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code) does not match the URL (https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-research-data-access-code</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code vs https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-SharedDataModelResearchCollection"> </a>
+<h2><a href="StructureDefinition-SharedDataModelResearchCollection.html">fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5]&#8203;.short (l1&#8203;/c18606)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5]&#8203;.short (l1&#8203;/c20731)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. '</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-ncpi-research-study"> </a>
-<h2><a href="StructureDefinition-ncpi-research-study.html">fsh-generated/resources/StructureDefinition-ncpi-research-study.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-ncpi-research-study.html">fsh-generated/resources/StructureDefinition-ncpi-research-study.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -158,8 +221,8 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
 </table>
 <hr/>
 <a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-research-study-associated-party"> </a>
-<h2><a href="StructureDefinition-research-study-associated-party.html">fsh-generated/resources/StructureDefinition-research-study-associated-party.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-research-study-associated-party.html">fsh-generated/resources/StructureDefinition-research-study-associated-party.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -186,8 +249,8 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
 </table>
 <hr/>
 <a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-research-study-design"> </a>
-<h2><a href="StructureDefinition-research-study-design.html">fsh-generated/resources/StructureDefinition-research-study-design.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-research-study-design.html">fsh-generated/resources/StructureDefinition-research-study-design.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -208,8 +271,8 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
 </table>
 <hr/>
 <a name="_home_runner_work_ncpi-fhir-ig-2_ncpi-fhir-ig-2_fsh-generated_resources_StructureDefinition-research-study-result"> </a>
-<h2><a href="StructureDefinition-research-study-result.html">fsh-generated/resources/StructureDefinition-research-study-result.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-research-study-result.html">fsh-generated/resources/StructureDefinition-research-study-result.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4B/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -226,5 +289,27 @@ hl7.fhir.uv.tools#1.0.0-candidate:     <a href="https://build.fhir.org/ig/FHIR/f
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-collection-type.html">fsh-generated/resources/CodeSystem-collection-type.json</a></td><td><b>Conformance resource /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type) does not match the URL (https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-research-data-access-code.html">fsh-generated/resources/CodeSystem-research-data-access-code.json</a></td><td><b>Conformance resource /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code.json - the canonical URL (https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code) does not match the URL (https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-SharedDataModelResearchCollection.html">fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json</a></td><td><b>value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-SharedDataModelResearchCollection.html">fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json</a></td><td><b>value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. '</b></td>
+   </tr>
+</table>
 </body>
 </html>

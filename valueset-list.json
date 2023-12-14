@@ -1,6 +1,28 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollectionTypeVS",
+      "title" : "Collection Type",
+      "description" : "Enumerated list of Collection types",
+      "systems" : [
+        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type"
+      ]
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessCodeVS",
+      "title" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "systems" : [
+        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code"
+      ]
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
       "version" : "0.1.0",
       "status" : "draft",

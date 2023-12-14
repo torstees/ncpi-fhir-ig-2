@@ -28,18 +28,32 @@
     "name" : "NCPIFHIRIGv2"
   },
   {
-    "id" : "CommonDataModelResearchStudy",
-    "type" : "StructureDefinition",
-    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/CommonDataModelResearchStudy",
-    "version" : "0.1.0",
-    "name" : "CdmResearchStudy"
-  },
-  {
     "id" : "MyPatient",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient",
     "version" : "0.1.0",
     "name" : "MyPatient"
+  },
+  {
+    "id" : "SharedDataModelResearchCollection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchCollection",
+    "version" : "0.1.0",
+    "name" : "CdmResearchCollection"
+  },
+  {
+    "id" : "SharedDataModelResearchDataAccessPolicy",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchDataAccessPolicy",
+    "version" : "0.1.0",
+    "name" : "CdmResearchDataAccessPolicy"
+  },
+  {
+    "id" : "SharedDataModelResearchStudy",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchStudy",
+    "version" : "0.1.0",
+    "name" : "CdmResearchStudy"
   },
   {
     "id" : "ncpi-research-study",
@@ -70,6 +84,20 @@
     "name" : "ResearchStudyResult"
   },
   {
+    "id" : "collection-type-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
+    "version" : "0.1.0",
+    "name" : "CollectionTypeVS"
+  },
+  {
+    "id" : "research-data-access-code-vs",
+    "type" : "ValueSet",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-code-vs",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessCodeVS"
+  },
+  {
     "id" : "study-name-type-vs",
     "type" : "ValueSet",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
@@ -82,5 +110,19 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
     "version" : "0.1.0",
     "name" : "StudyPersonnelRoleVS"
+  },
+  {
+    "id" : "collection-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type",
+    "version" : "0.1.0",
+    "name" : "CollectionType"
+  },
+  {
+    "id" : "research-data-access-code",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessCode"
   }
 ]

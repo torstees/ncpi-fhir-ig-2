@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MyPatient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-27T21:08:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-14T19:43:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

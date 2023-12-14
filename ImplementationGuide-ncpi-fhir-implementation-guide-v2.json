@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-11-27T21:08:00+00:00",
+  "date" : "2023-12-14T19:43:16+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -611,13 +611,25 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CommonDataModelResearchStudy"
+        "reference" : "ValueSet/collection-type-vs"
       },
-      "name" : "CDM Research Study",
-      "description" : "The **Common Data Model (CDM) Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
+      "name" : "Collection Type",
+      "description" : "Enumerated list of Collection types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/collection-type"
+      },
+      "name" : "Collection Type",
+      "description" : "Enumerated list of collection types",
       "exampleBoolean" : false
     },
     {
@@ -671,6 +683,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/research-data-access-code-vs"
+      },
+      "name" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/research-data-access-code"
+      },
+      "name" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -702,6 +738,42 @@
       },
       "name" : "Research Study Result",
       "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchCollection"
+      },
+      "name" : "Shared Data Model for Research Collection",
+      "description" : "The **Shared Data Model for Research Collection** represent various collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchDataAccessPolicy"
+      },
+      "name" : "Shared Data Model for Research Data Access Policy",
+      "description" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SharedDataModelResearchStudy"
+      },
+      "name" : "Shared Data Model for Research Study",
+      "description" : "The **Shared Data Model for Research Study** represents the understanding of what a Research Study is from the context of users and authors of the NCPI FHIR IG.",
       "exampleBoolean" : false
     },
     {
