@@ -4,6 +4,11 @@
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-research-data-access-code.json: line 0, col 0, Error - URL Mismatch https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code vs https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code (BUSINESSRULE)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json: line 1, col 18606, Warning - value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. ' (INVALID)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection.json: line 1, col 20731, Warning - value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. ' (INVALID)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection.json: line 1, col 40548, Error - Canonical URL 'https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet] (INVALID)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection.json: line 1, col 59451, Error - Canonical URL 'https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet] (INVALID)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection.json: line 0, col 0, Error - The valueSet reference https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type on element List.code points to something that is not a value set (CodeSystem) (BUSINESSRULE)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection.json: line 0, col 0, Error - The valueSet reference https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type on element List.code points to something that is not a value set (CodeSystem) (BUSINESSRULE)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-study.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-study.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-associated-party.json: line 0, col 0, Warning - Review the extension type for research-study-associated-party: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
@@ -18,10 +23,12 @@
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-design.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-result.json: line 0, col 0, Warning - Review the extension type for research-study-result: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-result.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link.json: line 0, col 0, Warning - Review the extension type for research-web-Link: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
+/home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 
 NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 4, warn = 19, info = 1
-IG Publisher Version: 1.5.6
-Generated Thu Dec 14 19:43:55 UTC 2023. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
+err = 8, warn = 22, info = 1
+IG Publisher Version: 1.5.8
+Generated Wed Jan 03 18:04:39 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)

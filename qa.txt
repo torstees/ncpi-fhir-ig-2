@@ -1,9 +1,9 @@
 ﻿NCPIFHIRIGv2 : Validation Results
 =========================================
 
-err = 4, warn = 19, info = 1
-IG Publisher Version: 1.5.6
-Generated Thu Dec 14 19:43:55 UTC 2023. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
+err = 8, warn = 22, info = 1
+IG Publisher Version: 1.5.8
+Generated Wed Jan 03 18:04:39 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 4 / 4 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type : 2 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
@@ -16,10 +16,12 @@ Generated Thu Dec 14 19:43:55 UTC 2023. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchCollection : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-SharedDataModelResearchStudy : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-collection : 4 / 1 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-ncpi-research-study : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-associated-party : 0 / 6 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-design : 0 / 4 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-study-result : 0 / 2 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/StructureDefinition-research-web-Link : 0 / 2 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-collection-type-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-research-data-access-code-vs : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-study-name-type-vs : 0 / 0 / 1
@@ -51,6 +53,12 @@ WARNING: StructureDefinition/SharedDataModelResearchCollection: StructureDefinit
 WARNING: StructureDefinition/SharedDataModelResearchCollection: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace 'List of references to items included in the list. These can be studies, datasets, etc. '
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchDataAccessPolicy.json ==
 == fsh-generated/resources/StructureDefinition-SharedDataModelResearchStudy.json ==
+== fsh-generated/resources/StructureDefinition-ncpi-research-collection.json ==
+ERROR: StructureDefinition/ncpi-research-collection: StructureDefinition.snapshot.element[14].binding.valueSet: Canonical URL 'https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncpi-research-collection: StructureDefinition.differential.element[4].binding.valueSet: Canonical URL 'https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/ncpi-research-collection: StructureDefinition.differential.element[4].binding: The valueSet reference https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type on element List.code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/ncpi-research-collection: StructureDefinition.snapshot.element[14].binding: The valueSet reference https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type on element List.code points to something that is not a value set (CodeSystem)
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ncpi-research-study.json ==
 INFORMATION: StructureDefinition/ncpi-research-study: StructureDefinition.snapshot.element[21].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study'): The Implementation Guide contains no examples for this profile
@@ -69,6 +77,9 @@ WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-i
 == fsh-generated/resources/StructureDefinition-research-study-result.json ==
 WARNING: StructureDefinition/research-study-result: StructureDefinition.context[0]: Review the extension type for research-study-result: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-research-web-Link.json ==
+WARNING: StructureDefinition/research-web-Link: StructureDefinition.context[0]: Review the extension type for research-web-Link: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/ValueSet-collection-type-vs.json ==
 == fsh-generated/resources/ValueSet-research-data-access-code-vs.json ==
 == fsh-generated/resources/ValueSet-study-name-type-vs.json ==

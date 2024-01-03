@@ -25,6 +25,30 @@
       "http://hl7.org/fhir/R4B/valueset-link-type.html" : "LinkType"
     },
     {
+      "url" : "http://hl7.org/fhir/list-mode",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "oids" : ["2.16.840.1.113883.4.642.4.319"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-mode.html" : "ListMode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/list-status",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "ListStatus",
+      "title" : "ListStatus",
+      "description" : "The current state of the list.",
+      "oids" : ["2.16.840.1.113883.4.642.4.327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-status.html" : "ListStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/research-study-status",
       "version" : "4.3.0",
       "status" : "draft",
@@ -47,6 +71,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-empty-reason.html" : "List Empty Reasons"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-order.html" : "List Order Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
@@ -211,6 +259,21 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4B/valueset-jurisdiction.html" : "Jurisdiction"
+    },
+    {
+      "url" : "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "PatientMedicineChangeTypes",
+      "title" : "Patient Medicine Change Types",
+      "description" : "Example Item Flags for the List Resource. In this case, these are the kind of flags that would be used on a medication list at the end of a consultation.",
+      "oids" : [
+        "1.2.36.1.2001.1001.101.104.16592",
+        "2.16.840.1.113883.4.642.1.321"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-list-item-flag.html" : "Patient Medicine Change Types"
     }
   ]
 }

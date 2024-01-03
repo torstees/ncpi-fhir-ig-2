@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2023-12-14T19:43:16+00:00",
+  "date" : "2024-01-03T18:03:54+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -662,6 +662,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-collection"
+      },
+      "name" : "NCPI Research Collection",
+      "description" : "Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ncpi-research-study"
       },
       "name" : "NCPI Research Study",
@@ -738,6 +750,18 @@
       },
       "name" : "Research Study Result",
       "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-web-Link"
+      },
+      "name" : "Research Web Link",
+      "description" : "A URL pointing to a either a research study's website, an online document or other research related site or document.",
       "exampleBoolean" : false
     },
     {

@@ -79,6 +79,14 @@
         "Reference",
         "Reference"
       ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+      "title": "Research Web Link",
+      "types": [
+        "url",
+        "url"
+      ]
     }
   ],
   "profiles": {
@@ -86,6 +94,12 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient",
         "title": "MyPatient"
+      }
+    ],
+    "List": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
+        "title": "NCPI Research Collection"
       }
     ],
     "ResearchStudy": [
@@ -134,6 +148,9 @@
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result": [
       "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [
+      "List"
     ]
   }
 }

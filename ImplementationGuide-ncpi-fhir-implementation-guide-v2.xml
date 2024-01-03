@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2023-12-14T19:43:16+00:00"/>
+  <date value="2024-01-03T18:03:54+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -502,6 +502,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ncpi-research-collection"/>
+      </reference>
+      <name value="NCPI Research Collection"/>
+      <description value="Collections of research data including, but not limited, to Consortia, Programs, adhoc collections of Studies and datasets among other types of collections."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ncpi-research-study"/>
       </reference>
       <name value="NCPI Research Study"/>
@@ -572,6 +583,17 @@
       </reference>
       <name value="Research Study Result"/>
       <description value="Link to citations associated with the study's publications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/research-web-Link"/>
+      </reference>
+      <name value="Research Web Link"/>
+      <description value="A URL pointing to a either a research study's website, an online document or other research related site or document."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

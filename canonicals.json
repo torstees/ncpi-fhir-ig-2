@@ -56,6 +56,13 @@
     "name" : "CdmResearchStudy"
   },
   {
+    "id" : "ncpi-research-collection",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
+    "version" : "0.1.0",
+    "name" : "NcpiResearchCollection"
+  },
+  {
     "id" : "ncpi-research-study",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
@@ -82,6 +89,13 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result",
     "version" : "0.1.0",
     "name" : "ResearchStudyResult"
+  },
+  {
+    "id" : "research-web-Link",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+    "version" : "0.1.0",
+    "name" : "ResearchWebLink"
   },
   {
     "id" : "collection-type-vs",
