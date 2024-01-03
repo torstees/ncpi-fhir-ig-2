@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.5"}
-    h3,h4,h5,h6{--heading-prefix:"10.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.6"}
+    h3,h4,h5,h6{--heading-prefix:"10.6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -271,6 +271,25 @@
 
 
 <!-- insert intro if present -->
+
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<h3 id="basic-definition">Basic Definition</h3>
+<p>The collection element allows for high level organization of objects into various related groups. One common type of collection is a consortium, but other collections can also be established.  Items in a collection can include studies, datasets, or other collections (for example, if consortium A becomes a member of consortium B, the collection that represents consortium A can be added as an item in the collection representing consortium B).</p>
+
+<h4 id="primary-profile-restrictions-and-enhancements">Primary Profile Restrictions and Enhancements</h4>
+<ul>
+  <li>title <strong>must</strong> be defined in order for users to understand the purpose of the collection.</li>
+  <li>code <strong>must</strong> be defined and <strong>should</strong> be one of the codes from the CodeSystem, <a href="CodeSystem-collection-type.html">CollectionType</a>, when possible.</li>
+  <li>note <strong>should</strong> contain a meaningful description whenever possible.</li>
+  <li>there <strong>must</strong> be one or more entries referencing the “contained” resources.</li>
+  <li>When possible, a <a href="StructureDefinition-research-web-Link.html">website</a> should be provided. For Consortium, programs and other entities with formal websites, this should be the one that provides the best overview of the group. For adhoc collections, or those collections that are less formally defined, an online document may be sufficient.</li>
+</ul>
+
+</div>
 
 
 
@@ -917,7 +936,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Wed, Jan 3, 2024 18:03+0000">2024-01-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Wed, Jan 3, 2024 22:56+0000">2024-01-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

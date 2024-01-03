@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-01-03T18:03:54+00:00"/>
+  <date value="2024-01-03T22:56:43+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -455,6 +455,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-policy-description"/>
+      </reference>
+      <name value="Access Policy Description"/>
+      <description value="Descriptive text summarizing the policy restrictions and other details associated with this access provision."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -477,6 +488,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mesh-terms"/>
+      </reference>
+      <name value="MeSH Terms"/>
+      <description value="Example terms from Medical Subject Headings (MeSH) Ontology"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -495,6 +517,17 @@
       </reference>
       <name value="NCPI FHIR Codes"/>
       <description value="Codes that would apply to NCPI projects"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ncpi-research-access-policy"/>
+      </reference>
+      <name value="NCPI Research Access Policy"/>
+      <description value="Limitations and/or requirements that define how a user may gain access to a particular set of data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -583,6 +616,17 @@
       </reference>
       <name value="Research Study Result"/>
       <description value="Link to citations associated with the study's publications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/research-disease-use-limitation"/>
+      </reference>
+      <name value="Research Usage Limitation Disease Code"/>
+      <description value="Coding associated with limitation on what research can be performed this data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

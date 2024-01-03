@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-01-03T18:03:54+00:00",
+  "date" : "2024-01-03T22:56:43+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -611,6 +611,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/access-policy-description"
+      },
+      "name" : "Access Policy Description",
+      "description" : "Descriptive text summarizing the policy restrictions and other details associated with this access provision.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -635,6 +647,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mesh-terms"
+      },
+      "name" : "MeSH Terms",
+      "description" : "Example terms from Medical Subject Headings (MeSH) Ontology",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -654,6 +678,18 @@
       },
       "name" : "NCPI FHIR Codes",
       "description" : "Codes that would apply to NCPI projects",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ncpi-research-access-policy"
+      },
+      "name" : "NCPI Research Access Policy",
+      "description" : "Limitations and/or requirements that define how a user may gain access to a particular set of data.",
       "exampleBoolean" : false
     },
     {
@@ -750,6 +786,18 @@
       },
       "name" : "Research Study Result",
       "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-disease-use-limitation"
+      },
+      "name" : "Research Usage Limitation Disease Code",
+      "description" : "Coding associated with limitation on what research can be performed this data.",
       "exampleBoolean" : false
     },
     {

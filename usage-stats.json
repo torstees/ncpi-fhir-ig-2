@@ -4,6 +4,21 @@
   "fhirVersion": "4.3.0",
   "extensions": [
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
+      "title": "Access Policy Description",
+      "types": [
+        "markdown",
+        "markdown"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation",
+      "title": "Research Usage Limitation Disease Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party",
       "title": "Research Study Associated Party",
       "types": [
@@ -96,6 +111,12 @@
         "title": "MyPatient"
       }
     ],
+    "Consent": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy",
+        "title": "NCPI Research Access Policy"
+      }
+    ],
     "List": [
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection",
@@ -143,6 +164,12 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description": [
+      "Consent"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation": [
+      "Consent.provision"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design": [
       "ResearchStudy"
     ],
@@ -150,6 +177,7 @@
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [
+      "Consent",
       "List"
     ]
   }
