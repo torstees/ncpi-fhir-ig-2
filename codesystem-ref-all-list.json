@@ -61,6 +61,18 @@
       "http://hl7.org/fhir/R4B/valueset-consent-state-codes.html" : "ConsentState"
     },
     {
+      "url" : "http://hl7.org/fhir/group-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "GroupType",
+      "title" : "GroupType",
+      "description" : "Types of resources that are part of group.",
+      "oids" : ["2.16.840.1.113883.4.642.4.285"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-group-type.html" : "GroupType"
+    },
+    {
       "url" : "http://hl7.org/fhir/link-type",
       "version" : "4.3.0",
       "status" : "active",
@@ -288,6 +300,18 @@
       "http://hl7.org/fhir/R4B/valueset-research-study-reason-stopped.html" : "ResearchStudyReasonStopped"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/title-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1492"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4B/valueset-title-type.html" : "TitleType"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
       "version" : "2.1.0",
       "status" : "active",
@@ -372,6 +396,28 @@
       "http://hl7.org/fhir/R4B/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollectionType",
+      "title" : "Collection Type",
+      "description" : "Enumerated list of collection types",
+      "uses" : {
+      },
+      "ValueSet-collection-type-vs.html" : "Collection Type"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessCode",
+      "title" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
+      "uses" : {
+      },
+      "ValueSet-research-data-access-code-vs.html" : "Research Data Access Codes"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
       "version" : "0.1.0",
       "status" : "draft",
@@ -392,28 +438,6 @@
       "uses" : {
       },
       "ValueSet-study-personnel-role-vs.html" : "Study Personnel Role"
-    },
-    {
-      "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CollectionType",
-      "title" : "Collection Type",
-      "description" : "Enumerated list of collection types",
-      "uses" : {
-      },
-      "ValueSet-collection-type-vs.html" : "Collection Type"
-    },
-    {
-      "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ResearchDataAccessCode",
-      "title" : "Research Data Access Codes",
-      "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
-      "uses" : {
-      },
-      "ValueSet-research-data-access-code-vs.html" : "Research Data Access Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

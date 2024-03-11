@@ -7,8 +7,66 @@
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description",
       "title": "Access Policy Description",
       "types": [
-        "markdown",
         "markdown"
+      ]
+    },
+    {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
+      "title": "Label",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "CodeableReference",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "RatioRange",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage"
       ]
     },
     {
@@ -96,6 +154,13 @@
       ]
     },
     {
+      "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+      "title": "Research Study Subject Consent",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
       "title": "Research Web Link",
       "types": [
@@ -127,6 +192,16 @@
       {
         "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study",
         "title": "NCPI Research Study"
+      },
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
+        "title": "Research Study Subject"
+      }
+    ],
+    "Group": [
+      {
+        "url": "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group",
+        "title": "NCPI Research Study Group"
       }
     ]
   },
@@ -167,13 +242,22 @@
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description": [
       "Consent"
     ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension": [
+      "List"
+    ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-disease-use-limitation": [
       "Consent.provision"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party": [
+      "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-design": [
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result": [
+      "ResearchStudy"
+    ],
+    "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent": [
       "ResearchStudy"
     ],
     "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link": [

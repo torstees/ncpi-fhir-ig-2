@@ -26,6 +26,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -164,6 +165,20 @@
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/group-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "GroupType",
+      "title" : "GroupType",
+      "description" : "Types of resources that are part of group.",
+      "systems" : ["http://hl7.org/fhir/group-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.284"],
+      "sources" : ["2.16.840.1.113883.4.642.3.284"],
+      "uses" : {
+      },
+      "StructureDefinition-study-group.html" : "NCPI Research Study Group"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
       "version" : "4.3.0",
       "status" : "active",
@@ -179,6 +194,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -194,9 +210,11 @@
       "uses" : {
       },
       "StructureDefinition-MyPatient.html" : "MyPatient",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -327,6 +345,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.823"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -341,6 +360,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.821"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -357,6 +377,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.827"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -373,6 +394,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.825"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -387,6 +409,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.819"],
       "uses" : {
       },
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
       "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
     },
     {
@@ -431,6 +454,20 @@
       "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/title-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1492"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1492"],
+      "uses" : {
+      },
+      "StructureDefinition-label-extension.html" : "Label"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -438,11 +475,12 @@
       "title" : "Collection Type",
       "description" : "Enumerated list of Collection types",
       "systems" : [
-        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type"
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
@@ -464,12 +502,12 @@
       "title" : "Research Data Access Codes",
       "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
       "systems" : [
-        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code"
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",

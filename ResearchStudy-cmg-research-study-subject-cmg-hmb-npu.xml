@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchStudy xmlns="http://hl7.org/fhir">
+  <id value="cmg-research-study-subject-cmg-hmb-npu"/>
+  <meta>
+    <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ResearchStudy</b><a name="cmg-research-study-subject-cmg-hmb-npu"> </a><a name="hccmg-research-study-subject-cmg-hmb-npu"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ResearchStudy &quot;cmg-research-study-subject-cmg-hmb-npu&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-research-study-subject.html">Research Study Subject</a></p></div><p><b>Research Study Subject Consent</b>: <a href="Consent-hmb-npu-consent.html">Consent/hmb-npu-consent</a></p><p><b>identifier</b>: <code>http://mendelian.org/fhir</code>/BH-CMG-HMB-NPU</p><p><b>title</b>: BH-CMG HMB-NPU Consent Study Subject</p><p><b>partOf</b>: <a href="ResearchStudy-cmg-research-study-bhcmg.html">ResearchStudy/cmg-research-study-bhcmg</a></p><p><b>status</b>: completed</p><p><b>description</b>: CMG Consent Group, Health/Medical/Biomedical + Not for profit use</p><p><b>enrollment</b>: <a href="Group-cmg-research-study-bhcmg-consent-group-hmb-npu.html">Group/cmg-research-study-bhcmg-consent-group-hmb-npu</a> &quot;BM-CMG Study HMB-NPU Participants&quot;</p></div>
+  </text>
+  <extension url="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent">
+    <valueReference>
+      <reference value="Consent/hmb-npu-consent"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <system value="http://mendelian.org/fhir"/>
+    <value value="BH-CMG-HMB-NPU"/>
+  </identifier>
+  <title value="BH-CMG HMB-NPU Consent Study Subject"/>
+  <partOf>
+    <reference value="ResearchStudy/cmg-research-study-bhcmg"/>
+  </partOf>
+  <status value="completed"/>
+  <description value="CMG Consent Group, Health/Medical/Biomedical + Not for profit use"/>
+  <enrollment>
+    <reference value="Group/cmg-research-study-bhcmg-consent-group-hmb-npu"/>
+  </enrollment>
+</ResearchStudy>

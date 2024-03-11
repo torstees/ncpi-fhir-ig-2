@@ -10,7 +10,7 @@
   "name" : "NCPIFHIRIGv2",
   "title" : "NCPI FHIR Implementation Guide v2",
   "status" : "draft",
-  "date" : "2024-01-03T22:56:43+00:00",
+  "date" : "2024-03-11T22:11:27+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -331,7 +331,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -623,6 +623,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/cmg-research-study-bhcmg"
+      },
+      "name" : "Baylor Hopkins Center for Mendelian Genomics (BH CMG)",
+      "description" : "The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -642,6 +654,42 @@
       },
       "name" : "Collection Type",
       "description" : "Enumerated list of collection types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/hmb-irb-npu-consent"
+      },
+      "name" : "HMB-IRB-NPU Consent",
+      "description" : "Consented with Health/Medical/Biomedical + IRB Required + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/hmb-npu-consent"
+      },
+      "name" : "HMB-NPU Consent",
+      "description" : "Consented with Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/label-extension"
+      },
+      "name" : "Label",
+      "description" : "A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)",
       "exampleBoolean" : false
     },
     {
@@ -719,6 +767,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/study-group"
+      },
+      "name" : "NCPI Research Study Group",
+      "description" : "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/cmg-research-study-bhcmg-consent-group-hmb-npu"
+      },
+      "name" : "Participants consented under HMB-NPU",
+      "description" : "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/cmg-research-study-subject-cmg-hmb-npu"
+      },
+      "name" : "Participants consented under HMB-NPU",
+      "description" : "CMG Consent Group, Health/Medical/Biomedical + Not for profit use",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -786,6 +870,30 @@
       },
       "name" : "Research Study Result",
       "description" : "Link to citations associated with the study's publications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-subject"
+      },
+      "name" : "Research Study Subject",
+      "description" : "A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/research-study-subject-consent"
+      },
+      "name" : "Research Study Subject Consent",
+      "description" : "ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.",
       "exampleBoolean" : false
     },
     {
@@ -895,6 +1003,18 @@
       "name" : "Study Personnel Role",
       "description" : "Roles associated with study personnel.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "List"
+      }],
+      "reference" : {
+        "reference" : "List/ncpi-research-collection-cmg"
+      },
+      "name" : "The Centers for Medelian Genetics",
+      "description" : "The Centers for Medelian Genetics",
+      "exampleCanonical" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"
     }],
     "page" : {
       "nameUrl" : "toc.html",

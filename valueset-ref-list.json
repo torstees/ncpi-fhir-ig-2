@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/title-type",
+      "version" : "4.3.0",
+      "status" : "draft",
+      "name" : "TitleType",
+      "title" : "TitleType",
+      "description" : "Used to express the reason and specific aspect for the variant title, such as language and specific language.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/title-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1492"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1492"],
+      "uses" : {
+      },
+      "StructureDefinition-label-extension.html" : "Label"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/collection-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -8,11 +22,12 @@
       "title" : "Collection Type",
       "description" : "Enumerated list of Collection types",
       "systems" : [
-        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type"
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type"
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection"
+      "StructureDefinition-SharedDataModelResearchCollection.html" : "Shared Data Model for Research Collection",
+      "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/mesh-terms",
@@ -34,12 +49,12 @@
       "title" : "Research Data Access Codes",
       "description" : "Enumerated list of access codes such as dbGaP consent codes among others.",
       "systems" : [
-        "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code"
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"
       ],
       "uses" : {
       },
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",

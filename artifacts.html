@@ -267,6 +267,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The NCPI Research Study FHIR resource represents an individual research effort and acts as a grouper or “container” for that effort’s study participants and their related data files.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-study-group.html"
+                  title="StructureDefinition/study-group">NCPI Research Study Group</a>
+            </td>
+            <td>
+<p>Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as <em>All Participants</em> or <em>Participants From a Particular Consent Group</em>, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-research-study-subject.html"
+                  title="StructureDefinition/research-study-subject">Research Study Subject</a>
+            </td>
+            <td>
+<p>A ResearchStudySubject is representative of a group of participants whose consent and data use is governed by the same restrictions. This profile is an R4 proxy for the more flexible R5 ResearchSubject.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="3"> </a>
@@ -282,6 +300,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Descriptive text summarizing the policy restrictions and other details associated with this access provision.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-label-extension.html"
+                  title="StructureDefinition/label-extension">Label</a>
+            </td>
+            <td>
+<p>A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)</p>
 </td>
          </tr>
          <tr>
@@ -309,6 +336,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Link to citations associated with the study’s publications.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-research-study-subject-consent.html"
+                  title="StructureDefinition/research-study-subject-consent">Research Study Subject Consent</a>
+            </td>
+            <td>
+<p>ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.</p>
 </td>
          </tr>
          <tr>
@@ -443,10 +479,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="ResearchStudy-cmg-research-study-bhcmg.html"
+                  title="ResearchStudy/cmg-research-study-bhcmg">Baylor Hopkins Center for Mendelian Genomics (BH CMG)</a>
+            </td>
+            <td>
+<p>The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-hmb-irb-npu-consent.html"
+                  title="Consent/hmb-irb-npu-consent">HMB-IRB-NPU Consent</a>
+            </td>
+            <td>
+<p>Consented with Health/Medical/Biomedical + IRB Required + Not for profit use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-hmb-npu-consent.html" title="Consent/hmb-npu-consent">HMB-NPU Consent</a>
+            </td>
+            <td>
+<p>Consented with Health/Medical/Biomedical + Not for profit use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Group-cmg-research-study-bhcmg-consent-group-hmb-npu.html"
+                  title="Group/cmg-research-study-bhcmg-consent-group-hmb-npu">Participants consented under HMB-NPU</a>
+            </td>
+            <td>
+<p>BH-CMG study’s population consented under Health/Medical/Biomedical + Not for profit use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.html"
+                  title="ResearchStudy/cmg-research-study-subject-cmg-hmb-npu">Participants consented under HMB-NPU</a>
+            </td>
+            <td>
+<p>CMG Consent Group, Health/Medical/Biomedical + Not for profit use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Patient-PatientExample.html" title="Patient/PatientExample">PatientExample</a>
             </td>
             <td>
 <p>An example of a patient with a license to krill.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="List-ncpi-research-collection-cmg.html"
+                  title="List/ncpi-research-collection-cmg">The Centers for Medelian Genetics</a>
+            </td>
+            <td>
+<p>The Centers for Medelian Genetics</p>
 </td>
          </tr>
       </tbody>
@@ -475,7 +564,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Wed, Jan 3, 2024 22:56+0000">2024-01-03</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Mon, Mar 11, 2024 22:11+0000">2024-03-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

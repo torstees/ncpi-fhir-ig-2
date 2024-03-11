@@ -1,12 +1,28 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CollectionType",
+      "title" : "Collection Type",
+      "description" : "Enumerated list of collection types"
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "Ncpi",
       "title" : "NCPI FHIR Codes",
       "description" : "Codes that would apply to NCPI projects"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessCode",
+      "title" : "Research Data Access Codes",
+      "description" : "Enumerated list of access codes such as dbGaP consent codes among others."
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/study-name-type",
@@ -23,22 +39,6 @@
       "name" : "StudyPersonnelRole",
       "title" : "Study Personnel Role",
       "description" : "Roles associated with study personnel."
-    },
-    {
-      "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CollectionType",
-      "title" : "Collection Type",
-      "description" : "Enumerated list of collection types"
-    },
-    {
-      "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ResearchDataAccessCode",
-      "title" : "Research Data Access Codes",
-      "description" : "Enumerated list of access codes such as dbGaP consent codes among others."
     }
   ]
 }

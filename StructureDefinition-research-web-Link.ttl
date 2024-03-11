@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ResearchWebLink"] ; # 
   fhir:title [ fhir:v "Research Web Link"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-01-03T22:56:43+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-11T22:11:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -40,7 +40,10 @@
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "Element" ]
+     fhir:expression [ fhir:v "List" ]
+  ] [
+     fhir:type [ fhir:v "element" ] ;
+     fhir:expression [ fhir:v "Consent" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [

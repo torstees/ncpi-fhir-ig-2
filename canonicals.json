@@ -1,10 +1,24 @@
 [
   {
+    "id" : "collection-type",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+    "version" : "0.1.0",
+    "name" : "CollectionType"
+  },
+  {
     "id" : "ncpi",
     "type" : "CodeSystem",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/ncpi",
     "version" : "0.1.0",
     "name" : "Ncpi"
+  },
+  {
+    "id" : "research-data-access-code",
+    "type" : "CodeSystem",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code",
+    "version" : "0.1.0",
+    "name" : "ResearchDataAccessCode"
   },
   {
     "id" : "study-name-type",
@@ -63,6 +77,13 @@
     "name" : "AccessPolicyDescription"
   },
   {
+    "id" : "label-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension",
+    "version" : "0.1.0",
+    "name" : "Label"
+  },
+  {
     "id" : "ncpi-research-access-policy",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy",
@@ -112,11 +133,32 @@
     "name" : "ResearchStudyResult"
   },
   {
+    "id" : "research-study-subject",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject",
+    "version" : "0.1.0",
+    "name" : "ResearchStudySubject"
+  },
+  {
+    "id" : "research-study-subject-consent",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+    "version" : "0.1.0",
+    "name" : "ResearchStudySubjectConsent"
+  },
+  {
     "id" : "research-web-Link",
     "type" : "StructureDefinition",
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
     "version" : "0.1.0",
     "name" : "ResearchWebLink"
+  },
+  {
+    "id" : "study-group",
+    "type" : "StructureDefinition",
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group",
+    "version" : "0.1.0",
+    "name" : "ResearchStudyGroup"
   },
   {
     "id" : "collection-type-vs",
@@ -152,19 +194,5 @@
     "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-personnel-role-vs",
     "version" : "0.1.0",
     "name" : "StudyPersonnelRoleVS"
-  },
-  {
-    "id" : "collection-type",
-    "type" : "CodeSystem",
-    "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/collection-type",
-    "version" : "0.1.0",
-    "name" : "CollectionType"
-  },
-  {
-    "id" : "research-data-access-code",
-    "type" : "CodeSystem",
-    "url" : "https://nih-ncpi.github.ioo/ncpi-fhir-ig-2/CodeSystem/data-access-code",
-    "version" : "0.1.0",
-    "name" : "ResearchDataAccessCode"
   }
 ]
