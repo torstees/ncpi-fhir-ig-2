@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-11T22:11:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-15T21:50:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -536,6 +536,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/access-type" ]
+       ] ;
+       fhir:name [ fhir:v "Access Type" ] ;
+       fhir:description [ fhir:v "Access type code associated with downloads affected by this Access Policy ( open | registered | controlled )" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ResearchStudy" ]
        ] ) ;
        fhir:reference [
@@ -548,6 +560,135 @@
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gru-dac-consent> ;
+         fhir:reference [ fhir:v "Consent/kf-gru-dac-consent" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN General Research Use (GRU) Consent DAC" ] ;
+       fhir:description [ fhir:v "General Research Use (GRU)" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gru-dbgap-consent> ;
+         fhir:reference [ fhir:v "Consent/kf-gru-dbgap-consent" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN General Research Use (GRU) Consent dbGaP" ] ;
+       fhir:description [ fhir:v "General Research Use (GRU)" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-gsr-allowed> ;
+         fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-gsr-allowed" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN Genomic Summary Results (GSR) Allowed Access" ] ;
+       fhir:description [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-gru-dac> ;
+         fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-gru-dac" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN GRU data access access via DAC" ] ;
+       fhir:description [ fhir:v "GRU data access access via DAC" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-gru-dbgap> ;
+         fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-gru-dbgap" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN GRU data access access via dbGaP" ] ;
+       fhir:description [ fhir:v "GRU data access access via dbGaP" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/PractitionerRole/kf-research-study-personnel-role-op-lead> ;
+         fhir:reference [ fhir:v "PractitionerRole/kf-research-study-personnel-role-op-lead" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN Operations Lead" ] ;
+       fhir:description [ fhir:v "CBTN Operations Lead" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-registered> ;
+         fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-registered" ]
+       ] ;
+       fhir:name [ fhir:v "CBTN Registered Tier Access" ] ;
+       fhir:description [ fhir:v "CBTN Registered Tier Access" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-cbtn> ;
+         fhir:reference [ fhir:v "ResearchStudy/kf-research-study-cbtn" ]
+       ] ;
+       fhir:name [ fhir:v "Children's Brain Tumor Network (CBTN)" ] ;
+       fhir:description [ fhir:v "Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children's Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project's proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects." ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Organization/kf-research-study-organization-chop> ;
+         fhir:reference [ fhir:v "Organization/kf-research-study-organization-chop" ]
+       ] ;
+       fhir:name [ fhir:v "Children's Hospital of Philadelphia" ] ;
+       fhir:description [ fhir:v "Represents the Organization for which CHOP PIs are affiliated" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -572,6 +713,45 @@
        fhir:name [ fhir:v "Collection Type" ] ;
        fhir:description [ fhir:v "Enumerated list of collection types" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/PractitionerRole/kf-research-study-personnel-role-pi> ;
+         fhir:reference [ fhir:v "PractitionerRole/kf-research-study-personnel-role-pi" ]
+       ] ;
+       fhir:name [ fhir:v "dbGaP PI" ] ;
+       fhir:description [ fhir:v "dbGaP PI" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/PractitionerRole/kf-research-study-personnel-role-pi-x01> ;
+         fhir:reference [ fhir:v "PractitionerRole/kf-research-study-personnel-role-pi-x01" ]
+       ] ;
+       fhir:name [ fhir:v "dbGaP PI, X01 FY 2021" ] ;
+       fhir:description [ fhir:v "dbGaP PI, X01 FY 2021" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gsr-allowed-access> ;
+         fhir:reference [ fhir:v "Consent/kf-gsr-allowed-access" ]
+       ] ;
+       fhir:name [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
+       fhir:description [ fhir:v "Genomic Summary Results (GSR) Allowed Access" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -605,6 +785,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "List" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/List/ncpi-research-collection-kfx01> ;
+         fhir:reference [ fhir:v "List/ncpi-research-collection-kfx01" ]
+       ] ;
+       fhir:name [ fhir:v "Kids First X01s" ] ;
+       fhir:description [ fhir:v "Kids First X01s" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -625,18 +820,6 @@
        ] ;
        fhir:name [ fhir:v "MeSH Terms" ] ;
        fhir:description [ fhir:v "Example terms from Medical Subject Headings (MeSH) Ontology" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
-       ] ;
-       fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -692,8 +875,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group> ;
-         fhir:reference [ fhir:v "StructureDefinition/study-group" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/research-study-group" ]
        ] ;
        fhir:name [ fhir:v "NCPI Research Study Group" ] ;
        fhir:description [ fhir:v "Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc." ] ;
@@ -710,8 +893,8 @@
        fhir:name [ fhir:v "Participants consented under HMB-NPU" ] ;
        fhir:description [ fhir:v "BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use" ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
        ]
      ] [
        fhir:extension ( [
@@ -731,17 +914,47 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
+         fhir:value [ fhir:v "Group" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Patient/PatientExample> ;
-         fhir:reference [ fhir:v "Patient/PatientExample" ]
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/kf-research-study-cbtn-participants> ;
+         fhir:reference [ fhir:v "Group/kf-research-study-cbtn-participants" ]
        ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
+       fhir:name [ fhir:v "Participants from the CBTN research study" ] ;
+       fhir:description [ fhir:v "Participants from the CBTN research study" ] ;
        fhir:example [
-         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient>
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "List" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/List/ncpi-research-collection-pbta> ;
+         fhir:reference [ fhir:v "List/ncpi-research-collection-pbta" ]
+       ] ;
+       fhir:name [ fhir:v "Pediatric Brain Tumor Atlas" ] ;
+       fhir:description [ fhir:v "Pediatric Brain Tumor Atlas" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-registered-allowed-access> ;
+         fhir:reference [ fhir:v "Consent/kf-registered-allowed-access" ]
+       ] ;
+       fhir:name [ fhir:v "Registered Tier Access" ] ;
+       fhir:description [ fhir:v "Registered Tier Access" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
        ]
      ] [
        fhir:extension ( [
@@ -766,6 +979,42 @@
        ] ;
        fhir:name [ fhir:v "Research Data Access Codes" ] ;
        fhir:description [ fhir:v "Enumerated list of access codes such as dbGaP consent codes among others." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/research-data-access-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Research Data Access Type Codes" ] ;
+       fhir:description [ fhir:v "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type> ;
+         fhir:reference [ fhir:v "CodeSystem/research-data-access-type" ]
+       ] ;
+       fhir:name [ fhir:v "Research Data Access Type Codes" ] ;
+       fhir:description [ fhir:v "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement> ;
+         fhir:reference [ fhir:v "StructureDefinition/research-study-acknowledgement" ]
+       ] ;
+       fhir:name [ fhir:v "Research Study Acknowledgement" ] ;
+       fhir:description [ fhir:v "Provides an informative description of acknowledgement expectations for those using data from the research study." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

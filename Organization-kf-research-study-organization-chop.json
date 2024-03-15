@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Organization",
+  "id" : "kf-research-study-organization-chop",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"kf-research-study-organization-chop\"> </a><a name=\"hckf-research-study-organization-chop\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;kf-research-study-organization-chop&quot; </p></div><p><b>identifier</b>: CHOP</p><p><b>name</b>: Children's Hospital of Philadelphia</p><p><b>alias</b>: CHOP</p></div>"
+  },
+  "identifier" : [{
+    "value" : "CHOP"
+  }],
+  "name" : "Children's Hospital of Philadelphia",
+  "alias" : ["CHOP"]
+}

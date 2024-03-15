@@ -1,0 +1,17 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "kf-research-study-personnel-role-op-lead",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"kf-research-study-personnel-role-op-lead\"> </a><a name=\"hckf-research-study-personnel-role-op-lead\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;kf-research-study-personnel-role-op-lead&quot; </p></div><p><b>organization</b>: <a href=\"Organization-kf-research-study-organization-chop.html\">Organization/kf-research-study-organization-chop</a> &quot;Children's Hospital of Philadelphia&quot;</p><p><b>code</b>: ICT professional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#ict)</span></p></div>"
+  },
+  "organization" : {
+    "reference" : "Organization/kf-research-study-organization-chop"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "code" : "ict"
+    }]
+  }]
+}

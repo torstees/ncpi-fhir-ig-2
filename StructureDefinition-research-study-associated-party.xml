@@ -36,7 +36,7 @@ Binding: Research Study Party Organization Type (Example)<br/></td></tr>
   <name value="ResearchStudyAssociatedParty"/>
   <title value="Research Study Associated Party"/>
   <status value="draft"/>
-  <date value="2024-03-11T22:11:27+00:00"/>
+  <date value="2024-03-15T21:50:53+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -60,7 +60,7 @@ Binding: Research Study Party Organization Type (Example)<br/></td></tr>
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="Element"/>
+    <expression value="ResearchStudy"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

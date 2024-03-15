@@ -1,20 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "4.3.0",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "systems" : ["http://hl7.org/fhir/administrative-gender"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
       "version" : "4.3.0",
       "status" : "draft",
@@ -26,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-action",
@@ -176,7 +162,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.284"],
       "uses" : {
       },
-      "StructureDefinition-study-group.html" : "NCPI Research Study Group"
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
@@ -194,8 +180,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.48"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -209,26 +195,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient",
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-study-group.html" : "NCPI Research Study Group",
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-group.html" : "NCPI Research Study Group",
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection",
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/link-type",
-      "version" : "4.3.0",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "LinkType",
-      "description" : "The type of link between this patient resource and another patient resource.",
-      "systems" : ["http://hl7.org/fhir/link-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.423"],
-      "sources" : ["2.16.840.1.113883.4.642.3.423"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
@@ -301,37 +272,6 @@
       "StructureDefinition-ncpi-research-collection.html" : "NCPI Research Collection"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-      "version" : "4.3.0",
-      "status" : "active",
-      "name" : "Marital Status Codes",
-      "title" : "MaritalStatus",
-      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.29"],
-      "sources" : ["2.16.840.1.113883.4.642.3.29"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-      "version" : "4.3.0",
-      "status" : "active",
-      "name" : "PatientContactRelationship",
-      "title" : "Patient Contact Relationship",
-      "description" : "The nature of the relationship between the patient and the contact person.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
-      "uses" : {
-      },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-objective-type",
       "version" : "4.3.0",
       "status" : "draft",
@@ -345,8 +285,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.823"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
@@ -360,8 +300,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.821"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-prim-purp-type",
@@ -377,8 +317,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.827"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-reason-stopped",
@@ -394,8 +334,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.825"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/research-study-status",
@@ -409,8 +349,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.819"],
       "uses" : {
       },
-      "StructureDefinition-research-study-subject.html" : "Research Study Subject",
-      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study"
+      "StructureDefinition-ncpi-research-study.html" : "NCPI Research Study",
+      "StructureDefinition-research-study-subject.html" : "Research Study Subject"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -506,8 +446,22 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy",
-      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy"
+      "StructureDefinition-SharedDataModelResearchDataAccessPolicy.html" : "Shared Data Model for Research Data Access Policy",
+      "StructureDefinition-ncpi-research-access-policy.html" : "NCPI Research Access Policy"
+    },
+    {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessTypeVS",
+      "title" : "Research Data Access Type Codes",
+      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-access-type.html" : "Access Type"
     },
     {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",

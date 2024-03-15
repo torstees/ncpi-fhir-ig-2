@@ -2,11 +2,11 @@
   "resourceType" : "Group",
   "id" : "cmg-research-study-bhcmg-consent-group-hmb-npu",
   "meta" : {
-    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group"]
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"cmg-research-study-bhcmg-consent-group-hmb-npu\"> </a><a name=\"hccmg-research-study-bhcmg-consent-group-hmb-npu\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;cmg-research-study-bhcmg-consent-group-hmb-npu&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-study-group.html\">NCPI Research Study Group</a></p></div><p><b>identifier</b>: <code>http://mendelian.org/fhir/Group</code>/HMB-NPU-Participants</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: BM-CMG Study HMB-NPU Participants</p><p><b>quantity</b>: 1665</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Group</b><a name=\"cmg-research-study-bhcmg-consent-group-hmb-npu\"> </a><a name=\"hccmg-research-study-bhcmg-consent-group-hmb-npu\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Group &quot;cmg-research-study-bhcmg-consent-group-hmb-npu&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-research-study-group.html\">NCPI Research Study Group</a></p></div><p><b>identifier</b>: <code>http://mendelian.org/fhir/Group</code>/HMB-NPU-Participants</p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: BM-CMG Study HMB-NPU Participants</p><p><b>quantity</b>: 1665</p></div>"
   },
   "identifier" : [{
     "system" : "http://mendelian.org/fhir/Group",

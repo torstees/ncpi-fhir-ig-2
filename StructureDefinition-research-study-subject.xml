@@ -14,7 +14,7 @@
   <name value="ResearchStudySubject"/>
   <title value="Research Study Subject"/>
   <status value="draft"/>
-  <date value="2024-03-11T22:11:27+00:00"/>
+  <date value="2024-03-15T21:50:53+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -420,6 +420,78 @@
       <type>
         <code value="Extension"/>
         <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-result"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children unless an empty Parameters resource"/>
+        <expression value="hasValue() or (children().count() &gt; id.count()) or $this is Parameters"/>
+        <xpath value="@value|f:*|h:div|self::f:Parameters"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="ResearchStudy.extension:associatedParty">
+      <path value="ResearchStudy.extension"/>
+      <sliceName value="associatedParty"/>
+      <short value="Research Study Associated Party"/>
+      <definition value="Sponsors, collaborators, and other parties affiliated with a research study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children unless an empty Parameters resource"/>
+        <expression value="hasValue() or (children().count() &gt; id.count()) or $this is Parameters"/>
+        <xpath value="@value|f:*|h:div|self::f:Parameters"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="ResearchStudy.extension:acknowledgement">
+      <path value="ResearchStudy.extension"/>
+      <sliceName value="acknowledgement"/>
+      <short value="URL describing the policy restrictions in detail."/>
+      <definition value="Provides an informative description of acknowledgement expectations for those using data from the research study."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement"/>
       </type>
       <condition value="ele-1"/>
       <constraint>

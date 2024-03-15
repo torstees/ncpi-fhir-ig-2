@@ -11,7 +11,7 @@
   <name value="NCPIFHIRIGv2"/>
   <title value="NCPI FHIR Implementation Guide v2"/>
   <status value="draft"/>
-  <date value="2024-03-11T22:11:27+00:00"/>
+  <date value="2024-03-15T21:50:53+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
@@ -466,6 +466,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-type"/>
+      </reference>
+      <name value="Access Type"/>
+      <description value="Access type code associated with downloads affected by this Access Policy ( open | registered | controlled )"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ResearchStudy"/>
       </extension>
       <reference>
@@ -474,6 +485,105 @@
       <name value="Baylor Hopkins Center for Mendelian Genomics (BH CMG)"/>
       <description value="The Centers for Mendelian Genomics project uses next-generation sequencing and computational approaches to discover the genes and variants that underlie Mendelian conditions. By discovering genes that cause Mendelian conditions, we will expand our understanding of their biology to facilitate diagnosis and new treatments."/>
       <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/kf-gru-dac-consent"/>
+      </reference>
+      <name value="CBTN General Research Use (GRU) Consent DAC"/>
+      <description value="General Research Use (GRU)"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/kf-gru-dbgap-consent"/>
+      </reference>
+      <name value="CBTN General Research Use (GRU) Consent dbGaP"/>
+      <description value="General Research Use (GRU)"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/kf-research-study-subject-gsr-allowed"/>
+      </reference>
+      <name value="CBTN Genomic Summary Results (GSR) Allowed Access"/>
+      <description value="Genomic Summary Results (GSR) Allowed Access"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/kf-research-study-subject-gru-dac"/>
+      </reference>
+      <name value="CBTN GRU data access access via DAC"/>
+      <description value="GRU data access access via DAC"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/kf-research-study-subject-gru-dbgap"/>
+      </reference>
+      <name value="CBTN GRU data access access via dbGaP"/>
+      <description value="GRU data access access via dbGaP"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/kf-research-study-personnel-role-op-lead"/>
+      </reference>
+      <name value="CBTN Operations Lead"/>
+      <description value="CBTN Operations Lead"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/kf-research-study-subject-registered"/>
+      </reference>
+      <name value="CBTN Registered Tier Access"/>
+      <description value="CBTN Registered Tier Access"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/kf-research-study-cbtn"/>
+      </reference>
+      <name value="Children's Brain Tumor Network (CBTN)"/>
+      <description value="Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children's Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project's proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects."/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/kf-research-study-organization-chop"/>
+      </reference>
+      <name value="Children's Hospital of Philadelphia"/>
+      <description value="Represents the Organization for which CHOP PIs are affiliated"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -499,6 +609,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/kf-research-study-personnel-role-pi"/>
+      </reference>
+      <name value="dbGaP PI"/>
+      <description value="dbGaP PI"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/kf-research-study-personnel-role-pi-x01"/>
+      </reference>
+      <name value="dbGaP PI, X01 FY 2021"/>
+      <description value="dbGaP PI, X01 FY 2021"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/kf-gsr-allowed-access"/>
+      </reference>
+      <name value="Genomic Summary Results (GSR) Allowed Access"/>
+      <description value="Genomic Summary Results (GSR) Allowed Access"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -521,6 +664,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/ncpi-research-collection-kfx01"/>
+      </reference>
+      <name value="Kids First X01s"/>
+      <description value="Kids First X01s"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -539,17 +693,6 @@
       </reference>
       <name value="MeSH Terms"/>
       <description value="Example terms from Medical Subject Headings (MeSH) Ontology"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MyPatient"/>
-      </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -601,7 +744,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/study-group"/>
+        <reference value="StructureDefinition/research-study-group"/>
       </reference>
       <name value="NCPI Research Study Group"/>
       <description value="Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as *All Participants* or *Participants From a Particular Consent Group*, etc."/>
@@ -616,7 +759,7 @@
       </reference>
       <name value="Participants consented under HMB-NPU"/>
       <description value="BH-CMG study's population consented under Health/Medical/Biomedical + Not for profit use"/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/study-group"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -631,14 +774,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Group"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="Group/kf-research-study-cbtn-participants"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/MyPatient"/>
+      <name value="Participants from the CBTN research study"/>
+      <description value="Participants from the CBTN research study"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/ncpi-research-collection-pbta"/>
+      </reference>
+      <name value="Pediatric Brain Tumor Atlas"/>
+      <description value="Pediatric Brain Tumor Atlas"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/kf-registered-allowed-access"/>
+      </reference>
+      <name value="Registered Tier Access"/>
+      <description value="Registered Tier Access"/>
+      <exampleCanonical value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -660,6 +825,39 @@
       </reference>
       <name value="Research Data Access Codes"/>
       <description value="Enumerated list of access codes such as dbGaP consent codes among others."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/research-data-access-type-vs"/>
+      </reference>
+      <name value="Research Data Access Type Codes"/>
+      <description value="Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/research-data-access-type"/>
+      </reference>
+      <name value="Research Data Access Type Codes"/>
+      <description value="Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/research-study-acknowledgement"/>
+      </reference>
+      <name value="Research Study Acknowledgement"/>
+      <description value="Provides an informative description of acknowledgement expectations for those using data from the research study."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

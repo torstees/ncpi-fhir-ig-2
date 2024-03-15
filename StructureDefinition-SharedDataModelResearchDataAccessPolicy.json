@@ -10,7 +10,7 @@
   "name" : "CdmResearchDataAccessPolicy",
   "title" : "Shared Data Model for Research Data Access Policy",
   "status" : "draft",
-  "date" : "2024-03-11T22:11:27+00:00",
+  "date" : "2024-03-15T21:50:53+00:00",
   "publisher" : "NCPI FHIR Working Group",
   "contact" : [{
     "name" : "NCPI FHIR Working Group",
@@ -25,11 +25,6 @@
   }],
   "description" : "The **Shared Data Model for Research Data Access Policy** represent the various Data Use Agreements that govern a researcher's access and use of research data.",
   "fhirVersion" : "4.3.0",
-  "mapping" : [{
-    "identity" : "rim",
-    "uri" : "http://hl7.org/v3",
-    "name" : "RIM Mapping"
-  }],
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/SharedDataModelResearchDataAccessPolicy",

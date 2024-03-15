@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/Consent/kf-gru-dac-consent> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kf-gru-dac-consent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy"^^xsd:anyURI ;
+       fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-access-policy>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"kf-gru-dac-consent\"> </a><a name=\"hckf-gru-dac-consent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;kf-gru-dac-consent&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ncpi-research-access-policy.html\">NCPI Research Access Policy</a></p></div><p><b>Access Policy Description</b>: Use of the data is limited only by the terms of the model Data Use Certification.</p><p><b>Research Web Link</b>: <a href=\"https://redcap.chop.edu/surveys/?s=A7M873HMN8\">https://redcap.chop.edu/surveys/?s=A7M873HMN8</a></p><p><b>Access Type</b>: Controlled <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-research-data-access-type.html\">Research Data Access Type Codes</a>#controlled)</span></p><p><b>status</b>: draft</p><p><b>scope</b>: Research <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#research)</span></p><p><b>category</b>: Research Information Access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentcategorycodes.html\">Consent Category Codes</a>#research)</span></p><p><b>policyRule</b>: Common Rule Informed Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentpolicycodes.html\">Consent PolicyRule Codes</a>#cric)</span></p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Purpose</b></td></tr><tr><td style=\"display: none\">*</td><td>permit</td><td>General Research Use (Details: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code code GRU = 'General Research Use', stated as 'General Research Use')</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-policy-description"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Use of the data is limited only by the terms of the model Data Use Certification." ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "https://redcap.chop.edu/surveys/?s=A7M873HMN8"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/access-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "controlled" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentcategorycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "research" ] ;
+       fhir:display [ fhir:v "Research Information Access" ]
+     ] )
+  ] ) ; # 
+  fhir:policyRule [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentpolicycodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cric" ]
+     ] )
+  ] ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "permit" ] ;
+     fhir:purpose ( [
+       fhir:system [ fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GRU" ] ;
+       fhir:display [ fhir:v "General Research Use" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -35,6 +35,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Link to results generated during the study.","Link to citations associated with the study's publications.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children unless an empty Parameters resource {hasValue() or (children().count() > id.count()) or $this is Parameters}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.extension:associatedParty","ResearchStudy.extension","associatedParty","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-associated-party]]} {[]}
+","Research Study Associated Party","Sponsors, collaborators, and other parties affiliated with a research study.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children unless an empty Parameters resource {hasValue() or (children().count() > id.count()) or $this is Parameters}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ResearchStudy.extension:acknowledgement","ResearchStudy.extension","acknowledgement","","",0,*,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-acknowledgement]]} {[]}
+","URL describing the policy restrictions in detail.","Provides an informative description of acknowledgement expectations for those using data from the research study.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children unless an empty Parameters resource {hasValue() or (children().count() > id.count()) or $this is Parameters}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ResearchStudy.extension:consent","ResearchStudy.extension","consent","","",1,1,"","","","Extension {[CanonicalType[https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent]]} {[]}
 ","Research Study Subject Consent","ResearchStudySubjectConsent provides link to a consent through which participants were enrolled.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

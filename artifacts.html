@@ -233,15 +233,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-MyPatient.html"
-                  title="StructureDefinition/MyPatient">MyPatient</a>
-            </td>
-            <td>
-<p>An example profile of the Patient resource.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-ncpi-research-access-policy.html"
                   title="StructureDefinition/ncpi-research-access-policy">NCPI Research Access Policy</a>
             </td>
@@ -269,8 +260,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-study-group.html"
-                  title="StructureDefinition/study-group">NCPI Research Study Group</a>
+               <a href="StructureDefinition-research-study-group.html"
+                  title="StructureDefinition/research-study-group">NCPI Research Study Group</a>
             </td>
             <td>
 <p>Grouping subject participation within a research study is helpful to provide definitive lists of participants that fit a specific criteria such as <em>All Participants</em> or <em>Participants From a Particular Consent Group</em>, etc.</p>
@@ -304,11 +295,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-access-type.html"
+                  title="StructureDefinition/access-type">Access Type</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Access type code associated with downloads affected by this Access Policy ( open</td>
+      <td>registered</td>
+      <td>controlled )</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-label-extension.html"
                   title="StructureDefinition/label-extension">Label</a>
             </td>
             <td>
 <p>A text label accompanied by a code indicating the label type (such as Acronym, subtitle, etc)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-research-study-acknowledgement.html"
+                  title="StructureDefinition/research-study-acknowledgement">Research Study Acknowledgement</a>
+            </td>
+            <td>
+<p>Provides an informative description of acknowledgement expectations for those using data from the research study.</p>
 </td>
          </tr>
          <tr>
@@ -401,6 +418,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-research-data-access-type-vs.html"
+                  title="ValueSet/research-data-access-type-vs">Research Data Access Type Codes</a>
+            </td>
+            <td>
+<p>Enumerated list of access type codes such as ‘Open Access’, ‘Registered Access’ and ‘Controlled Access’</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-study-name-type-vs.html"
                   title="ValueSet/study-name-type-vs">Study Name Type</a>
             </td>
@@ -453,6 +479,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-research-data-access-type.html"
+                  title="CodeSystem/research-data-access-type">Research Data Access Type Codes</a>
+            </td>
+            <td>
+<p>Enumerated list of access type codes such as ‘Open Access’, ‘Registered Access’ and ‘Controlled Access’</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-study-name-type.html"
                   title="CodeSystem/study-name-type">Study Name Type</a>
             </td>
@@ -488,6 +523,96 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ResearchStudy-kf-research-study-subject-gru-dac.html"
+                  title="ResearchStudy/kf-research-study-subject-gru-dac">CBTN GRU data access access via DAC</a>
+            </td>
+            <td>
+<p>GRU data access access via DAC</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-kf-research-study-subject-gru-dbgap.html"
+                  title="ResearchStudy/kf-research-study-subject-gru-dbgap">CBTN GRU data access access via dbGaP</a>
+            </td>
+            <td>
+<p>GRU data access access via dbGaP</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-kf-gru-dac-consent.html"
+                  title="Consent/kf-gru-dac-consent">CBTN General Research Use (GRU) Consent DAC</a>
+            </td>
+            <td>
+<p>General Research Use (GRU)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-kf-gru-dbgap-consent.html"
+                  title="Consent/kf-gru-dbgap-consent">CBTN General Research Use (GRU) Consent dbGaP</a>
+            </td>
+            <td>
+<p>General Research Use (GRU)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-kf-research-study-subject-gsr-allowed.html"
+                  title="ResearchStudy/kf-research-study-subject-gsr-allowed">CBTN Genomic Summary Results (GSR) Allowed Access</a>
+            </td>
+            <td>
+<p>Genomic Summary Results (GSR) Allowed Access</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-kf-research-study-personnel-role-op-lead.html"
+                  title="PractitionerRole/kf-research-study-personnel-role-op-lead">CBTN Operations Lead</a>
+            </td>
+            <td>
+<p>CBTN Operations Lead</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-kf-research-study-subject-registered.html"
+                  title="ResearchStudy/kf-research-study-subject-registered">CBTN Registered Tier Access</a>
+            </td>
+            <td>
+<p>CBTN Registered Tier Access</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ResearchStudy-kf-research-study-cbtn.html"
+                  title="ResearchStudy/kf-research-study-cbtn">Children's Brain Tumor Network (CBTN)</a>
+            </td>
+            <td>
+<p>Brain tumors are the most common form of cancer in children aged 0-19 in the United States, and are the largest cause of cancer-related deaths. The estimated number of new cases in 2019 is nearly 3,800 and thus brain tumors are a rare disease. Despite their relative rarity, the years of potential life lost due to brain tumors in 2009 was estimated at 47,631 years for children and adolescents aged 0-19 in the United States; this is a disproportionate amount of life lost compared to adult cancers and represents an unrecognized societal threat. There is an urgent need to improve therapies for these children. Most of the high-grade glial and embryonal brain cancers still remain largely incurable despite decades of clinical and laboratory research. Existing non-targeted chemotherapies and radiation, while at times effective, often represent pyrrhic victories, leaving behind life-long health burdens and causing a significant risk of secondary malignancies. NIH funded pediatric brain tumor cohort-based genomic dataset generation efforts have lagged behind other histologies and have yet to be included as part of large-scale sequencing efforts. However, consortia-based initiatives like those supported by the Children’s Brain Tumor Network (CBTN) have demonstrated the early potential for clinically annotated genomic cohorts and their utility and interest by both the pediatric cancer and structural birth defect community with more than 130 data access requests for a non-embargoed cohort of tumor/normal whole genomes and paired tumor RNAseq. Indeed more than one quarter of this 800-subject initial sequencing cohort were identified to have birth-defect-associated clinical annotations in their clinical records, however, to our knowledge limited to no trio-based genomics cohort studies exist for any one pediatric brain tumor histology. The project’s proposed sequencing cohort defines the largest, clinically annotated pediatric brain tumor cohort study to date and seeks to define the intersection of germline and somatic underpinnings of pediatric brain tumors across a shared developmental context of cancer and structural birth defects.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-kf-research-study-organization-chop.html"
+                  title="Organization/kf-research-study-organization-chop">Children's Hospital of Philadelphia</a>
+            </td>
+            <td>
+<p>Represents the Organization for which CHOP PIs are affiliated</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-kf-gsr-allowed-access.html"
+                  title="Consent/kf-gsr-allowed-access">Genomic Summary Results (GSR) Allowed Access</a>
+            </td>
+            <td>
+<p>Genomic Summary Results (GSR) Allowed Access</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Consent-hmb-irb-npu-consent.html"
                   title="Consent/hmb-irb-npu-consent">HMB-IRB-NPU Consent</a>
             </td>
@@ -501,6 +626,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Consented with Health/Medical/Biomedical + Not for profit use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="List-ncpi-research-collection-kfx01.html"
+                  title="List/ncpi-research-collection-kfx01">Kids First X01s</a>
+            </td>
+            <td>
+<p>Kids First X01s</p>
 </td>
          </tr>
          <tr>
@@ -523,10 +657,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-PatientExample.html" title="Patient/PatientExample">PatientExample</a>
+               <a href="Group-kf-research-study-cbtn-participants.html"
+                  title="Group/kf-research-study-cbtn-participants">Participants from the CBTN research study</a>
             </td>
             <td>
-<p>An example of a patient with a license to krill.</p>
+<p>Participants from the CBTN research study</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="List-ncpi-research-collection-pbta.html"
+                  title="List/ncpi-research-collection-pbta">Pediatric Brain Tumor Atlas</a>
+            </td>
+            <td>
+<p>Pediatric Brain Tumor Atlas</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-kf-registered-allowed-access.html"
+                  title="Consent/kf-registered-allowed-access">Registered Tier Access</a>
+            </td>
+            <td>
+<p>Registered Tier Access</p>
 </td>
          </tr>
          <tr>
@@ -536,6 +689,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>The Centers for Medelian Genetics</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-kf-research-study-personnel-role-pi.html"
+                  title="PractitionerRole/kf-research-study-personnel-role-pi">dbGaP PI</a>
+            </td>
+            <td>
+<p>dbGaP PI</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-kf-research-study-personnel-role-pi-x01.html"
+                  title="PractitionerRole/kf-research-study-personnel-role-pi-x01">dbGaP PI, X01 FY 2021</a>
+            </td>
+            <td>
+<p>dbGaP PI, X01 FY 2021</p>
 </td>
          </tr>
       </tbody>
@@ -564,7 +735,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Mon, Mar 11, 2024 22:11+0000">2024-03-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 15, 2024 21:50+0000">2024-03-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-ncpi.github.io/ncpi-fhir-ig-2/PractitionerRole/kf-research-study-personnel-role-pi> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "kf-research-study-personnel-role-pi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"kf-research-study-personnel-role-pi\"> </a><a name=\"hckf-research-study-personnel-role-pi\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;kf-research-study-personnel-role-pi&quot; </p></div><p><b>organization</b>: <a href=\"Organization-kf-research-study-organization-chop.html\">Organization/kf-research-study-organization-chop</a> &quot;Children's Hospital of Philadelphia&quot;</p><p><b>code</b>: Researcher <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#researcher)</span></p></div>"
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Organization/kf-research-study-organization-chop> ;
+     fhir:reference [ fhir:v "Organization/kf-research-study-organization-chop" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/practitioner-role"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "researcher" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="16498ee3-81dd-431f-bfa5-341a40dd309a"/>
+  <id value="6f03310c-ab40-4005-895d-249947254734"/>
   <meta>
-    <lastUpdated value="2024-03-11T22:11:27.523+00:00"/>
+    <lastUpdated value="2024-03-15T21:50:53.913+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -62,10 +62,10 @@
         <title value="Collection Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-03-11T22:11:27+00:00"/>
+        <date value="2024-03-15T21:50:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:dbfc74aa-7faa-4a26-b310-a6f0467ed8eb"/>
-          <timestamp value="2024-03-11T22:11:51+00:00"/>
+          <identifier value="urn:uuid:70a8fe9e-b473-4446-9d67-bf0329c6573b"/>
+          <timestamp value="2024-03-15T21:51:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -113,7 +113,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-research-data-access-code.html">codesystem Research Data Access Codes v0.1.0 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts.</p>
+            <p>This value set contains 10 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -198,6 +198,14 @@
                 <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
                 <td>Genetic studies only</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-code-GSR"> </a>  
+                  <a href="CodeSystem-research-data-access-code.html#research-data-access-code-GSR">GSR</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code</td>
+                <td>Genomic Summary Results</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -207,11 +215,11 @@
         <title value="Research Data Access Codes"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-03-11T22:11:27+00:00"/>
+        <date value="2024-03-15T21:50:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:400f4574-c3fb-4f6a-a915-734494f45c7d"/>
-          <timestamp value="2024-03-11T22:11:51+00:00"/>
-          <total value="9"/>
+          <identifier value="urn:uuid:076dc92c-8c66-4e81-902e-61dbade94efe"/>
+          <timestamp value="2024-03-15T21:51:18+00:00"/>
+          <total value="10"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -273,6 +281,134 @@
             <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
             <code value="GSO"/>
             <display value="Genetic studies only"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code"/>
+            <code value="GSR"/>
+            <display value="Genomic Summary Results"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-research-data-access-type.html">codesystem Research Data Access Type Codes v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-open"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-open">open</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Open Access</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-registered"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-registered">registered</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Registered Access</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-controlled"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-controlled">controlled</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>Controlled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-gsr-restricted"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-restricted">gsr-restricted</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>GSR Restricted</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---nih-ncpi.github.io-ncpi-fhir-ig-2-CodeSystem-research-data-access-type-gsr-allowed"> </a>  
+                  <a href="CodeSystem-research-data-access-type.html#research-data-access-type-gsr-allowed">gsr-allowed</a>
+                </td>
+                <td>https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type</td>
+                <td>GSR Allowed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs"/>
+        <version value="0.1.0"/>
+        <name value="ResearchDataAccessTypeVS"/>
+        <title value="Research Data Access Type Codes"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2024-03-15T21:50:53+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:746e96de-0216-4cb2-80b3-768be8d376cc"/>
+          <timestamp value="2024-03-15T21:51:18+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="open"/>
+            <display value="Open Access"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="registered"/>
+            <display value="Registered Access"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="controlled"/>
+            <display value="Controlled"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="gsr-restricted"/>
+            <display value="GSR Restricted"/>
+          </contains>
+          <contains>
+            <system value="https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"/>
+            <code value="gsr-allowed"/>
+            <display value="GSR Allowed"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -350,10 +486,10 @@
         <title value="Study Name Type"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-03-11T22:11:27+00:00"/>
+        <date value="2024-03-15T21:50:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d1abe28d-fe4e-412b-83d6-2e9c2fa29dc7"/>
-          <timestamp value="2024-03-11T22:11:51+00:00"/>
+          <identifier value="urn:uuid:63d0167d-8d36-45fe-9693-9da8e36d0533"/>
+          <timestamp value="2024-03-15T21:51:18+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -457,10 +593,10 @@
         <title value="Study Personnel Role"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-03-11T22:11:27+00:00"/>
+        <date value="2024-03-15T21:50:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:527b6fda-d9dc-4f95-9ffe-740badb4bace"/>
-          <timestamp value="2024-03-11T22:11:52+00:00"/>
+          <identifier value="urn:uuid:46bba122-7f06-4ec3-b4ab-03d567c6798c"/>
+          <timestamp value="2024-03-15T21:51:18+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

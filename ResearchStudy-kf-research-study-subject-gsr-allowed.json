@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ResearchStudy",
+  "id" : "kf-research-study-subject-gsr-allowed",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"kf-research-study-subject-gsr-allowed\"> </a><a name=\"hckf-research-study-subject-gsr-allowed\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;kf-research-study-subject-gsr-allowed&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-research-study-subject.html\">Research Study Subject</a></p></div><p><b>Research Study Subject Consent</b>: <a href=\"Consent-kf-gsr-allowed-access.html\">Consent/kf-gsr-allowed-access</a></p><p><b>identifier</b>: <code>https://cbtn.org/</code>/GSR-ALLOWED</p><p><b>title</b>: GSR-ALLOWED Study Subject</p><p><b>partOf</b>: <a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy/kf-research-study-cbtn</a></p><p><b>status</b>: completed</p><p><b>description</b>: Genomic Summary Results (GSR) Allowed Access</p><p><b>enrollment</b>: <a href=\"Group-kf-research-study-cbtn-participants.html\">Group/kf-research-study-cbtn-participants</a> &quot;Participants from the CBTN research study&quot;</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject-consent",
+    "valueReference" : {
+      "reference" : "Consent/kf-gsr-allowed-access"
+    }
+  }],
+  "identifier" : [{
+    "system" : "https://cbtn.org/",
+    "value" : "GSR-ALLOWED"
+  }],
+  "title" : "GSR-ALLOWED Study Subject",
+  "partOf" : [{
+    "reference" : "ResearchStudy/kf-research-study-cbtn"
+  }],
+  "status" : "completed",
+  "description" : "Genomic Summary Results (GSR) Allowed Access",
+  "enrollment" : [{
+    "reference" : "Group/kf-research-study-cbtn-participants"
+  }]
+}

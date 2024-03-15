@@ -32,6 +32,17 @@
       ]
     },
     {
+      "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/research-data-access-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchDataAccessTypeVS",
+      "title" : "Research Data Access Type Codes",
+      "description" : "Enumerated list of access type codes such as 'Open Access', 'Registered Access' and 'Controlled Access'",
+      "systems" : [
+        "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type"
+      ]
+    },
+    {
       "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/ValueSet/study-name-type-vs",
       "version" : "0.1.0",
       "status" : "draft",

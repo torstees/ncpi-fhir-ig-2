@@ -1,0 +1,49 @@
+{
+  "resourceType" : "List",
+  "id" : "ncpi-research-collection-pbta",
+  "meta" : {
+    "profile" : ["https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/ncpi-research-collection"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Pediatric Brain Tumor Atlas</h2><table class=\"clstu\"><tr><td>Mode: snapshotStatus: currentCode: Consortium</td></tr><tr><td/></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"ResearchStudy-kf-research-study-cbtn.html\">ResearchStudy/kf-research-study-cbtn</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-web-Link",
+    "valueUrl" : "https://cbtn.org/pediatric-brain-tumor-atlas"
+  },
+  {
+    "extension" : [{
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/title-type",
+          "code" : "acronym"
+        }]
+      }
+    },
+    {
+      "url" : "label",
+      "valueString" : "PBTA"
+    }],
+    "url" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/label-extension"
+  }],
+  "status" : "current",
+  "mode" : "snapshot",
+  "title" : "Pediatric Brain Tumor Atlas",
+  "code" : {
+    "coding" : [{
+      "system" : "https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/collection-type",
+      "code" : "consortium",
+      "display" : "Consortium"
+    }]
+  },
+  "note" : [{
+    "text" : "The Pediatric Brain Tumor Atlas (PBTA) is a collaborative effort to accelerate discoveries for therapeutic intervention for children diagnosed with a brain tumor. The first PBTA dataset release occurred in September of 2018 and includes data from tumor types including matched tumor/normal, whole genome data (WGS), RNAseq, proteomics, longitudinal clinical data, imaging data including MRIs and radiology reports, histology slide images and pathology reports. Funding for this initiative was provided by more than 50 foundation sponsors"
+  }],
+  "entry" : [{
+    "item" : {
+      "reference" : "ResearchStudy/kf-research-study-cbtn"
+    }
+  }]
+}
