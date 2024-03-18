@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CBTN GRU data access access via dbGaP - JSON Representation - NCPI FHIR Implementation Guide v2 v0.1.0</title>
+    <title>CBTN GRU data access via dbGaP - JSON Representation - NCPI FHIR Implementation Guide v2 v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"10.36"}
-    h3,h4,h5,h6{--heading-prefix:"10.36"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.36"}
+    h3,h4,h5,h6{--heading-prefix:"12.36"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -122,8 +122,21 @@
       </li>
     </ul>
   </li>
-  <li>
-    <a href="artifacts.html">Artifacts</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">All Artifacts</a>
+      </li>
+      <li>
+        <a href="research_study_example_cmg.html">Research Study Examples (CMG)</a>
+      </li>
+      <li>
+        <a href="research_study_example_cbtn.html">Research Study Examples (CBTN)</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -137,7 +150,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CBTN GRU data access access via dbGaP</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CBTN GRU data access via dbGaP</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -196,7 +209,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: CBTN GRU data access access via dbGaP - JSON Representation</h2>
+<h2 id="root">: CBTN GRU data access via dbGaP - JSON Representation</h2>
 
 
 <p><a href="ResearchStudy-kf-research-study-subject-gru-dbgap.json" no-download="true">Raw json</a> | <a href="ResearchStudy-kf-research-study-subject-gru-dbgap.json" download>Download</a></p>
@@ -217,7 +230,7 @@
   },
   "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ResearchStudy&lt;/b&gt;&lt;a name=\&quot;kf-research-study-subject-gru-dbgap\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hckf-research-study-subject-gru-dbgap\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ResearchStudy &amp;quot;kf-research-study-subject-gru-dbgap&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-research-study-subject.html\&quot;&gt;Research Study Subject&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Research Study Subject Consent&lt;/b&gt;: &lt;a href=\&quot;Consent-kf-gru-dbgap-consent.html\&quot;&gt;Consent/kf-gru-dbgap-consent&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://cbtn.org/&lt;/code&gt;/GRU-dbGaP&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: GRU-dbGaP Study Subject&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;ResearchStudy-kf-research-study-cbtn.html\&quot;&gt;ResearchStudy/kf-research-study-cbtn&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: General Research Use data access access via dbGaP&lt;/p&gt;&lt;p&gt;&lt;b&gt;enrollment&lt;/b&gt;: &lt;a href=\&quot;Group-kf-research-study-cbtn-participants.html\&quot;&gt;Group/kf-research-study-cbtn-participants&lt;/a&gt; &amp;quot;Participants from the CBTN research study&amp;quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4B/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ResearchStudy&lt;/b&gt;&lt;a name=\&quot;kf-research-study-subject-gru-dbgap\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hckf-research-study-subject-gru-dbgap\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ResearchStudy &amp;quot;kf-research-study-subject-gru-dbgap&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-research-study-subject.html\&quot;&gt;Research Study Subject&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Research Study Subject Consent&lt;/b&gt;: &lt;a href=\&quot;Consent-kf-gru-dbgap-consent.html\&quot;&gt;Consent/kf-gru-dbgap-consent&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://cbtn.org/&lt;/code&gt;/GRU-dbGaP&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: GRU-dbGaP Study Subject&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=\&quot;ResearchStudy-kf-research-study-cbtn.html\&quot;&gt;ResearchStudy/kf-research-study-cbtn&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: General Research Use data access via dbGaP&lt;/p&gt;&lt;p&gt;&lt;b&gt;enrollment&lt;/b&gt;: &lt;a href=\&quot;Group-kf-research-study-cbtn-participants.html\&quot;&gt;Group/kf-research-study-cbtn-participants&lt;/a&gt; &amp;quot;Participants from the CBTN research study&amp;quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.extension">extension</a>" : [
     {
@@ -240,7 +253,7 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.status">status</a>" : "completed",
-  "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.description">description</a>" : "General Research Use data access access via dbGaP",
+  "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.description">description</a>" : "General Research Use data access via dbGaP",
   "<a href="http://hl7.org/fhir/R4B/researchstudy.html#ResearchStudy.enrollment">enrollment</a>" : [
     {
       <a href="Group-kf-research-study-cbtn-participants.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4B/references.html#Reference#Reference.reference">reference</a>" : "Group/kf-research-study-cbtn-participants"
@@ -276,7 +289,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Fri, Mar 15, 2024 21:50+0000">2024-03-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">NCPI FHIR Working Group</a>.  Package ncpi-fhir-implementation-guide-v2#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 4.3.0</a>. Generated <span title="Mon, Mar 18, 2024 15:37+0000">2024-03-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

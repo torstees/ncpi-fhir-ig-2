@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NcpiResearchStudy"] ; # 
   fhir:title [ fhir:v "NCPI Research Study"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-15T21:50:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-18T15:37:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;

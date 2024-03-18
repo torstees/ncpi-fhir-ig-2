@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NCPIFHIRIGv2"] ; # 
   fhir:title [ fhir:v "NCPI FHIR Implementation Guide v2"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-15T21:50:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-18T15:37:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NCPI FHIR Working Group"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NCPI FHIR Working Group" ] ;
@@ -614,8 +614,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-gru-dac> ;
          fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-gru-dac" ]
        ] ;
-       fhir:name [ fhir:v "CBTN GRU data access access via DAC" ] ;
-       fhir:description [ fhir:v "GRU data access access via DAC" ] ;
+       fhir:name [ fhir:v "CBTN GRU data access via DAC" ] ;
+       fhir:description [ fhir:v "GRU data access via DAC" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
@@ -629,8 +629,8 @@
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/kf-research-study-subject-gru-dbgap> ;
          fhir:reference [ fhir:v "ResearchStudy/kf-research-study-subject-gru-dbgap" ]
        ] ;
-       fhir:name [ fhir:v "CBTN GRU data access access via dbGaP" ] ;
-       fhir:description [ fhir:v "GRU data access access via dbGaP" ] ;
+       fhir:name [ fhir:v "CBTN GRU data access via dbGaP" ] ;
+       fhir:description [ fhir:v "GRU data access via dbGaP" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
@@ -907,6 +907,36 @@
        ] ;
        fhir:name [ fhir:v "Participants consented under HMB-NPU" ] ;
        fhir:description [ fhir:v "CMG Consent Group, Health/Medical/Biomedical + Not for profit use" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu> ;
+         fhir:reference [ fhir:v "Group/cmg-research-study-bhcmg-consent-group-irb-hmb-npu" ]
+       ] ;
+       fhir:name [ fhir:v "Participants consented under IRB-HMB-NPU" ] ;
+       fhir:description [ fhir:v "BH-CMG study's population consented under Health/Medical/Biomedical + IRB Required + Not for profit use" ] ;
+       fhir:example [
+         fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group"^^xsd:anyURI ;
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu> ;
+         fhir:reference [ fhir:v "ResearchStudy/cmg-research-study-subject-cmg-irb-hmb-npu" ]
+       ] ;
+       fhir:name [ fhir:v "Participants consented under IRB-HMB-NPU" ] ;
+       fhir:description [ fhir:v "BH-CMG Consent Group, Health/Medical/Biomedical + IRB Required + Not for profit use" ] ;
        fhir:example [
          fhir:v "https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject"^^xsd:anyURI ;
          fhir:link <https://nih-ncpi.github.io/ncpi-fhir-ig-2/StructureDefinition/research-study-subject>
@@ -1239,6 +1269,14 @@
        ] [
          fhir:name [ fhir:v "ncpi.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Ncpi" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:name [ fhir:v "research_study_example_cbtn.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Research Study Example Cbtn" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:name [ fhir:v "research_study_example_cmg.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Research Study Example Cmg" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

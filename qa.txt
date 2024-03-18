@@ -3,7 +3,7 @@ NCPIFHIRIGv2 : Validation Results
 
 err = 4, warn = 19, info = 29
 IG Publisher Version: 1.6.1
-Generated Fri Mar 15 21:51:46 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
+Generated Mon Mar 18 15:38:29 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-implementation-guide-v2#0.1.0 (canonical = https://nih-ncpi.github.io/ncpi-fhir-ig-2)
  Build Errors : 2 / 4 / 0
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-collection-type : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/CodeSystem-ncpi : 0 / 0 / 1
@@ -18,6 +18,7 @@ Generated Fri Mar 15 21:51:46 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-gsr-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Consent-kf-registered-allowed-access : 0 / 0 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/Group-kf-research-study-cbtn-participants : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2 : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/List-ncpi-research-collection-cmg : 0 / 0 / 2
@@ -29,6 +30,7 @@ Generated Fri Mar 15 21:51:46 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/PractitionerRole-kf-research-study-personnel-role-pi-x01 : 0 / 1 / 2
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-bhcmg : 1 / 3 / 7
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-hmb-npu : 0 / 0 / 1
+ /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-irb-hmb-npu : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-cbtn : 3 / 4 / 6
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dac : 0 / 0 / 1
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ResearchStudy-kf-research-study-subject-gru-dbgap : 0 / 0 / 1
@@ -60,8 +62,8 @@ Generated Fri Mar 15 21:51:46 UTC 2024. FHIR version 4.3.0 for ncpi-fhir-impleme
  /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-study-personnel-role-vs : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-research-study.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 395, column 40: The link 'StructureDefinition-study-summary.html' for "Study Summary" cannot be resolved
-ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-research-study.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 395, column 111: The link 'StructureDefinition-study-variable-summary.html' for "Study Variable Summary" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-research-study.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 408, column 40: The link 'StructureDefinition-study-summary.html' for "Study Summary" cannot be resolved
+ERROR: /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/output/StructureDefinition-ncpi-research-study.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 408, column 111: The link 'StructureDefinition-study-variable-summary.html' for "Study Variable Summary" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -85,6 +87,7 @@ INFORMATION: Consent/kf-gsr-allowed-access: Consent.extension[2].value.ofType(Co
 == fsh-generated/resources/Consent-kf-registered-allowed-access.json ==
 INFORMATION: Consent/kf-registered-allowed-access: Consent.extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type|0.1.0
 == fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-hmb-npu.json ==
+== fsh-generated/resources/Group-cmg-research-study-bhcmg-consent-group-irb-hmb-npu.json ==
 == fsh-generated/resources/Group-kf-research-study-cbtn-participants.json ==
 == fsh-generated/resources/ImplementationGuide-ncpi-fhir-implementation-guide-v2.json ==
 == fsh-generated/resources/List-ncpi-research-collection-cmg.json ==
@@ -114,6 +117,7 @@ INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].codi
 INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[3]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
 INFORMATION: ResearchStudy/cmg-research-study-bhcmg: ResearchStudy.focus[0].coding[4]: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.177' could not be found, so the code cannot be validated
 == fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-hmb-npu.json ==
+== fsh-generated/resources/ResearchStudy-cmg-research-study-subject-cmg-irb-hmb-npu.json ==
 == fsh-generated/resources/ResearchStudy-kf-research-study-cbtn.json ==
 WARNING: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[0].value.ofType(markdown): The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 INFORMATION: ResearchStudy/kf-research-study-cbtn: ResearchStudy.extension[1].extension[1].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://hl7.org/fhir/research-study-party-role' could not be found, so the code cannot be validated

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6f03310c-ab40-4005-895d-249947254734",
+  "id" : "4e7bb204-0d81-45ea-aa84-fce49ce5ecba",
   "meta" : {
-    "lastUpdated" : "2024-03-15T21:50:53.913+00:00"
+    "lastUpdated" : "2024-03-18T15:37:44.580+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Collection Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-03-15T21:50:53+00:00",
+      "date" : "2024-03-18T15:37:44+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:70a8fe9e-b473-4446-9d67-bf0329c6573b",
-        "timestamp" : "2024-03-15T21:51:18+00:00",
+        "identifier" : "urn:uuid:b35245ac-4547-4dd4-8e9e-3fa8ef18efd8",
+        "timestamp" : "2024-03-18T15:38:06+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -73,10 +73,10 @@
       "title" : "Research Data Access Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-03-15T21:50:53+00:00",
+      "date" : "2024-03-18T15:37:44+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:076dc92c-8c66-4e81-902e-61dbade94efe",
-        "timestamp" : "2024-03-15T21:51:18+00:00",
+        "identifier" : "urn:uuid:bf5a219b-3067-4819-aa88-a733ce0f9397",
+        "timestamp" : "2024-03-18T15:38:06+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -162,10 +162,10 @@
       "title" : "Research Data Access Type Codes",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-03-15T21:50:53+00:00",
+      "date" : "2024-03-18T15:37:44+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:746e96de-0216-4cb2-80b3-768be8d376cc",
-        "timestamp" : "2024-03-15T21:51:18+00:00",
+        "identifier" : "urn:uuid:210ff2e8-db2b-433b-b0c9-2a592d03cc58",
+        "timestamp" : "2024-03-18T15:38:06+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -226,10 +226,10 @@
       "title" : "Study Name Type",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-03-15T21:50:53+00:00",
+      "date" : "2024-03-18T15:37:44+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:63d0167d-8d36-45fe-9693-9da8e36d0533",
-        "timestamp" : "2024-03-15T21:51:18+00:00",
+        "identifier" : "urn:uuid:8734e287-211f-4be0-bef8-c2160df481a5",
+        "timestamp" : "2024-03-18T15:38:06+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -290,10 +290,10 @@
       "title" : "Study Personnel Role",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-03-15T21:50:53+00:00",
+      "date" : "2024-03-18T15:37:44+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:46bba122-7f06-4ec3-b4ab-03d567c6798c",
-        "timestamp" : "2024-03-15T21:51:18+00:00",
+        "identifier" : "urn:uuid:b6284d59-5f4a-44f6-aaf1-0f6a11af0a8d",
+        "timestamp" : "2024-03-18T15:38:06+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
