@@ -745,7 +745,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"research-study-associated-party","Extension.extension:name","Extension.extension","name","","",0,1,"Y","","","Extension {[]} {[]}
+"research-study-associated-party","Extension.extension:name","Extension.extension","name","","",1,1,"Y","","","Extension {[]} {[]}
 ","Name of associated party","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "research-study-associated-party","Extension.extension:name.id","Extension.extension.id","","","",0,1,"","","","id {[]} {[]}
@@ -759,7 +759,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "research-study-associated-party","Extension.extension:name.value[x]","Extension.extension.value[x]","","","",0,1,"","","","string {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4B/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"research-study-associated-party","Extension.extension:role","Extension.extension","role","","",1,1,"Y","","","Extension {[]} {[]}
+"research-study-associated-party","Extension.extension:role","Extension.extension","role","","",0,1,"Y","","","Extension {[]} {[]}
 ","sponsor | lead-sponsor | sponsor-investigator | primary-investigator | collaborator | funding-source | general-contact | recruitment-contact | sub-investigator | study-director | study-chair
 Binding: Research Study Party Role (Extensible)","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

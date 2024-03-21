@@ -57,4 +57,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /home/runner/work/ncpi-fhir-ig-2/ncpi-fhir-ig-2/fsh-generated/resources/ValueSet-mesh-terms.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.177 (EXCEPTION)
 
 err = 4, warn = 19, info = 29
-IG Publisher Version: 1.6.1
+IG Publisher Version: 1.6.3
